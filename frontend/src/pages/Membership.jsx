@@ -50,30 +50,32 @@ const PlanCard = ({ duration, price, features, ctaLabel, ctaHref, best }) => {
 const Membership = () => {
   return (
     <>
-      {/* HERO - FULL FRAME IMAGE, NO TEXT */}
-      <section className="relative h-screen w-full overflow-hidden">
+      {/* HERO - FULL FRAME IMAGE WITH OVERLAY TEXT */}
+      <section className="relative h-screen min-h-[700px] w-full overflow-hidden flex items-center justify-center">
         <img
           src={IMAGES.gym1}
           alt="Membership"
           className="absolute inset-0 w-full h-full object-cover"
         />
-        <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-black/70 to-transparent pointer-events-none" />
-      </section>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/45 to-black/85" />
 
-      {/* INTRO */}
-      <section className="bg-black pt-20 md:pt-24">
-        <div className="max-w-3xl mx-auto px-6 text-center">
-          <p className="text-white/50 text-[11px] tracking-[0.4em] uppercase mb-4">
+        <div className="relative z-10 text-center px-6 max-w-4xl">
+          <p
+            className="text-white/80 text-[11px] md:text-xs tracking-[0.4em] uppercase mb-6"
+            style={{ fontFamily: "'Inter', sans-serif" }}
+          >
             Membership
           </p>
           <h1
-            className="text-white text-4xl md:text-5xl lg:text-6xl tracking-[0.04em] mb-6"
-            style={{ fontFamily: "'Oswald', sans-serif", fontWeight: 500 }}
+            className="text-white text-5xl md:text-7xl lg:text-8xl tracking-[0.03em] leading-[1.02] mb-8"
+            style={{ fontFamily: "'Oswald', sans-serif", fontWeight: 600 }}
           >
-            MORE THAN A MEMBERSHIP
+            MORE THAN
+            <br />
+            A MEMBERSHIP
           </h1>
           <p
-            className="text-white/75 text-base md:text-lg leading-relaxed"
+            className="text-white/85 text-base md:text-lg lg:text-xl leading-relaxed max-w-3xl mx-auto"
             style={{ fontFamily: "'Inter', sans-serif" }}
           >
             Menjadi member Fortis Fitness berarti mendapatkan lebih dari sekadar
