@@ -8,8 +8,8 @@ const Membership = () => {
     <>
       <PageHero
         eyebrow="Membership"
-        title="CHOOSE YOUR PATH"
-        subtitle="Two locations. Two unique experiences. One uncompromising standard of training."
+        title="MORE THAN A MEMBERSHIP"
+        subtitle="Menjadi member Fortis Fitness berarti mendapatkan lebih dari sekadar tempat latihan — fasilitas premium, berbagai pilihan kelas, dan komunitas yang siap tumbuh bersama."
         image={IMAGES.gym1}
       />
 
