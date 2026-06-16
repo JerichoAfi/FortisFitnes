@@ -1,0 +1,25 @@
+# Netlify configuration for Reload/Fortis Fitness frontend (React + CRA)
+# Build & deploy this folder as the site
+
+[build]
+  base    = "frontend"
+  command = "yarn build"
+  publish = "build"
+
+[build.environment]
+  CI               = "false"
+  NODE_VERSION     = "20"
+  YARN_VERSION     = "1.22.22"
+  GENERATE_SOURCEMAP = "false"
+
+# SPA fallback so React Router handles all routes (otherwise /membership etc -> 404)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Caching headers for assets
+[[headers]]
+  for = "/static/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
