@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowUpRight } from 'lucide-react';
 import {
@@ -8,17 +8,84 @@ import {
   WA,
 } from '../data/mock';
 
-const CLASS_LIST = [
-  'YOGA',
-  'PILATES',
-  'ZUMBA',
-  'AEROBIC',
-  'POUNDFIT',
-  'BOXING',
-  'MUAYTHAI',
-  'CIRCUIT TRAINING',
-  'CALISTHENICS',
+const CLASS_HOVER_LIST = [
+  { name: 'YOGA', image: IMAGES.yoga },
+  { name: 'PILATES', image: IMAGES.pilates },
+  { name: 'ZUMBA', image: IMAGES.pilates },
+  { name: 'AEROBIC', image: IMAGES.yoga },
+  { name: 'POUNDFIT', image: IMAGES.battle },
+  { name: 'BOXING', image: IMAGES.boxing },
+  { name: 'MUAYTHAI', image: IMAGES.bjj },
+  { name: 'CIRCUIT TRAINING', image: IMAGES.equip1 },
+  { name: 'CALISTHENICS', image: IMAGES.equip2 },
 ];
+
+const ClassesHoverSection = () => {
+  const [activeIdx, setActiveIdx] = useState(5); // default BOXING
+  const active = CLASS_HOVER_LIST[activeIdx];
+
+  return (
+    <section className="relative bg-black overflow-hidden">
+      <div className="relative min-h-[700px]">
+        {/* layered images for crossfade */}
+        {CLASS_HOVER_LIST.map((c, i) => (
+          <div
+            key={c.name}
+            className={`absolute inset-0 bg-cover bg-center transition-opacity duration-700 ease-out ${
+              i === activeIdx ? 'opacity-100' : 'opacity-0'
+            }`}
+            style={{ backgroundImage: `url(${c.image})` }}
+            aria-hidden="true"
+          />
+        ))}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/65 to-black/95" />
+
+        <div className="relative z-10 max-w-[1400px] mx-auto px-6 lg:px-12 py-24 md:py-32">
+          <div className="text-center mb-14 max-w-3xl mx-auto">
+            <h2
+              className="text-white text-4xl md:text-6xl lg:text-7xl tracking-[0.04em] mb-6"
+              style={{ fontFamily: "'Oswald', sans-serif", fontWeight: 500 }}
+            >
+              GROUP CLASSES
+              <br />
+              FOR EVERY GOAL
+            </h2>
+            <p
+              className="text-white/75 text-base md:text-lg leading-relaxed"
+              style={{ fontFamily: "'Inter', sans-serif" }}
+            >
+              Setiap orang memiliki tujuan yang berbeda. Karena itu, Fortis
+              Fitness menghadirkan berbagai pilihan kelas untuk membantu kamu
+              menjadi lebih kuat, lebih sehat, dan terus berkembang.
+            </p>
+          </div>
+
+          <ul
+            className="flex flex-col items-center gap-y-3 md:gap-y-4 max-w-3xl mx-auto"
+            style={{ fontFamily: "'Oswald', sans-serif", fontWeight: 500 }}
+          >
+            {CLASS_HOVER_LIST.map((c, i) => {
+              const isActive = i === activeIdx;
+              return (
+                <li
+                  key={c.name}
+                  onMouseEnter={() => setActiveIdx(i)}
+                  onFocus={() => setActiveIdx(i)}
+                  tabIndex={0}
+                  className={`cursor-pointer text-center tracking-[0.18em] text-2xl md:text-3xl lg:text-4xl transition-all duration-300 outline-none ${
+                    isActive ? 'text-white scale-105' : 'text-white/45 hover:text-white/80'
+                  }`}
+                >
+                  {c.name}
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      </div>
+    </section>
+  );
+};
 
 const Home = () => {
   return (
@@ -84,130 +151,58 @@ const Home = () => {
       </section>
 
       {/* GROUP CLASSES FOR EVERY GOAL */}
-      <section className="relative bg-black overflow-hidden">
-        <div className="relative min-h-[700px]">
-          <div
-            className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: `url(${IMAGES.boxing})` }}
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/65 to-black/95" />
+      <ClassesHoverSection />
 
-          <div className="relative z-10 max-w-[1400px] mx-auto px-6 lg:px-12 py-24 md:py-32">
-            <div className="text-center mb-12 max-w-3xl mx-auto">
-              <h2
-                className="text-white text-4xl md:text-6xl lg:text-7xl tracking-[0.04em] mb-6"
-                style={{ fontFamily: "'Oswald', sans-serif", fontWeight: 500 }}
-              >
-                GROUP CLASSES
-                <br />
-                FOR EVERY GOAL
-              </h2>
-              <p
-                className="text-white/75 text-base md:text-lg leading-relaxed"
-                style={{ fontFamily: "'Inter', sans-serif" }}
-              >
-                Setiap orang memiliki tujuan yang berbeda. Karena itu, Fortis
-                Fitness menghadirkan berbagai pilihan kelas untuk membantu kamu
-                menjadi lebih kuat, lebih sehat, dan terus berkembang.
-              </p>
-            </div>
-
-            <div className="max-w-5xl mx-auto text-center">
-              <div className="flex flex-wrap justify-center items-center gap-x-5 gap-y-3 text-white tracking-[0.18em] text-sm md:text-base"
-                style={{ fontFamily: "'Oswald', sans-serif", fontWeight: 400 }}>
-                {CLASS_LIST.map((c, i) => (
-                  <React.Fragment key={c}>
-                    <span className="hover:text-white/100 text-white/85">{c}</span>
-                    {i < CLASS_LIST.length - 1 && (
-                      <span className="text-white/30">&bull;</span>
-                    )}
-                  </React.Fragment>
-                ))}
-              </div>
-
-              <div className="mt-12">
-                <Link
-                  to="/book-a-class"
-                  className="inline-flex items-center justify-center border border-white text-white text-xs uppercase tracking-[0.25em] px-10 py-4 hover:bg-white hover:text-black transition-all duration-300"
-                >
-                  Book a Class
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* OUR LOCATIONS - simple line + photos */}
+      {/* OUR LOCATIONS - photos only */}
       <section className="bg-black py-24 md:py-32">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
-          <div className="text-center mb-14">
-            <h2
-              className="text-white text-3xl md:text-5xl tracking-[0.06em] leading-tight flex flex-wrap items-baseline justify-center gap-x-4 gap-y-2"
-              style={{ fontFamily: "'Oswald', sans-serif", fontWeight: 500 }}
-            >
-              <span>KEPANJEN</span>
-              <span className="text-white/30">&bull;</span>
-              <span>
-                GRAHA KENCANA
-                <span
-                  className="text-white/55 text-base md:text-lg ml-2 italic tracking-normal"
-                  style={{ fontFamily: "'Inter', sans-serif", fontWeight: 300 }}
-                >
-                  (Private Gym Series)
-                </span>
-              </span>
-              <span className="text-white/30">&bull;</span>
-              <span>
-                TUREN
-                <span
-                  className="text-white/55 text-base md:text-lg ml-2 italic tracking-normal"
-                  style={{ fontFamily: "'Inter', sans-serif", fontWeight: 300 }}
-                >
-                  (Coming Soon)
-                </span>
-              </span>
-            </h2>
-          </div>
-
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {LOCATIONS.map((loc) => (
-              <Link
-                to="/locations"
-                key={loc.id}
-                className="relative group overflow-hidden cursor-pointer aspect-[3/4] block"
-              >
-                <img
-                  src={loc.image}
-                  alt={loc.name}
-                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                  loading="lazy"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
-                <div className="absolute inset-0 flex flex-col items-center justify-end p-8 text-center">
-                  {loc.status === 'Coming Soon' && (
-                    <span className="text-[10px] uppercase tracking-[0.3em] text-white/80 border border-white/40 px-3 py-1 mb-4 bg-black/30">
-                      Coming Soon
-                    </span>
-                  )}
-                  <h3
-                    className="text-white text-2xl md:text-3xl tracking-[0.08em] mb-6"
-                    style={{ fontFamily: "'Oswald', sans-serif", fontWeight: 500 }}
-                  >
-                    {loc.name}
-                  </h3>
-                  <div className="flex items-center gap-2 border border-white/80 px-6 py-3 group-hover:bg-white group-hover:text-black transition-all duration-300">
-                    <span className="text-white text-[10px] uppercase tracking-[0.25em] group-hover:text-black">
-                      Discover More
-                    </span>
-                    <ArrowUpRight
-                      size={14}
-                      className="text-white group-hover:text-black"
-                    />
+            {LOCATIONS.map((loc) => {
+              const isPrivate = loc.id === 'graha';
+              const isComing = loc.status === 'Coming Soon';
+              return (
+                <Link
+                  to="/locations"
+                  key={loc.id}
+                  className="relative group overflow-hidden cursor-pointer aspect-[3/4] block"
+                >
+                  <img
+                    src={loc.image}
+                    alt={loc.name}
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
+                  <div className="absolute inset-0 flex flex-col items-center justify-end p-8 text-center">
+                    {isComing && (
+                      <span className="text-[10px] uppercase tracking-[0.3em] text-white/80 border border-white/40 px-3 py-1 mb-4 bg-black/30">
+                        Coming Soon
+                      </span>
+                    )}
+                    {isPrivate && (
+                      <span className="text-[10px] uppercase tracking-[0.3em] text-white/85 border border-white/40 px-3 py-1 mb-4 bg-black/30">
+                        Private Gym Series
+                      </span>
+                    )}
+                    <h3
+                      className="text-white text-2xl md:text-3xl tracking-[0.08em] mb-6"
+                      style={{ fontFamily: "'Oswald', sans-serif", fontWeight: 500 }}
+                    >
+                      {loc.name}
+                    </h3>
+                    <div className="flex items-center gap-2 border border-white/80 px-6 py-3 group-hover:bg-white group-hover:text-black transition-all duration-300">
+                      <span className="text-white text-[10px] uppercase tracking-[0.25em] group-hover:text-black">
+                        Discover More
+                      </span>
+                      <ArrowUpRight
+                        size={14}
+                        className="text-white group-hover:text-black"
+                      />
+                    </div>
                   </div>
-                </div>
-              </Link>
-            ))}
+                </Link>
+              );
+            })}
           </div>
         </div>
       </section>
