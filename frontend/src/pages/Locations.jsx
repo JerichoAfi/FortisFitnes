@@ -11,8 +11,7 @@ const LOCATION_DATA = [
       'Fortis Fitness menghadirkan pengalaman latihan yang nyaman, modern, dan berkualitas melalui fasilitas lengkap, 50+ imported gym equipment, unlimited gym & group classes, serta komunitas yang positif dan suportif. Tempat untuk berlatih, berkembang, dan menikmati setiap proses menuju versi terbaikmu.',
     image: IMAGES.gym1,
     address: 'Jl. Trunojoyo No. 50, Kepanjen, Kab. Malang',
-    phone: '0823-3332-7332',
-    phoneLink: 'http://wa.me/082333327332',
+    phoneLink: 'https://wa.me/6282333327332',
     phoneLabel: '0823-3332-7332 (Call / WhatsApp)',
     ig: '@fortisfitness.kepanjen',
     igLink:
@@ -32,8 +31,7 @@ const LOCATION_DATA = [
     highlight: 'Private. Comfortable. By Reservation Only.',
     image: IMAGES.gym2,
     address: 'Jl. Graha Kencana Selatan VI No. 5, Blimbing, Kota Malang',
-    phone: '0812-3920-1201',
-    phoneLink: 'http://wa.me/081239201201',
+    phoneLink: 'https://wa.me/6281239201201',
     phoneLabel: '0812-3920-1201 (Call / WhatsApp)',
     ig: '@fortisfitness.grahakencana',
     igLink:
@@ -41,7 +39,7 @@ const LOCATION_DATA = [
     tiktok: '@fortisfitness.gk',
     tiktokLink:
       'https://www.tiktok.com/@fortisfitness.gk?is_from_webapp=1&sender_device=pc',
-    maps: 'https://maps.google.com/?q=Jl.+Graha+Kencana+Selatan+VI+No.+5+Blimbing+Malang',
+    maps: 'https://maps.app.goo.gl/ZYZgvs43aoxTd7wK7',
   },
 ];
 
@@ -177,6 +175,50 @@ const Locations = () => {
               </div>
             </div>
           ))}
+
+          {/* TUREN - COMING SOON */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-16 items-center">
+            <div className="relative overflow-hidden aspect-[4/5] md:aspect-[5/6] rounded-2xl">
+              <img
+                src={IMAGES.gym3}
+                alt="Turen"
+                className="absolute inset-0 w-full h-full object-cover"
+                loading="lazy"
+              />
+              <div className="absolute inset-0 bg-black/70" />
+              <div className="absolute inset-0 flex items-center justify-center text-center px-6">
+                <div>
+                  <p className="text-white/70 text-[11px] tracking-[0.4em] uppercase mb-4">
+                    Opening Soon
+                  </p>
+                  <p
+                    className="text-white text-4xl md:text-5xl tracking-[0.15em]"
+                    style={{ fontFamily: "'Oswald', sans-serif", fontWeight: 700 }}
+                  >
+                    COMING SOON
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <p className="text-white/45 text-[11px] tracking-[0.4em] uppercase mb-4">
+                Branch 03
+              </p>
+              <h2
+                className="text-white text-3xl md:text-4xl lg:text-5xl tracking-[0.03em] leading-tight"
+                style={{ fontFamily: "'Oswald', sans-serif", fontWeight: 700 }}
+              >
+                TUREN
+                <span
+                  className="text-white/55 text-lg md:text-xl ml-3 italic tracking-normal"
+                  style={{ fontFamily: "'Inter', sans-serif", fontWeight: 300 }}
+                >
+                  (Coming Soon)
+                </span>
+              </h2>
+            </div>
+          </div>
         </div>
       </section>
     </>
