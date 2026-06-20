@@ -27,12 +27,13 @@ const Header = () => {
     >
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12 flex items-center justify-between h-20">
         <Link to="/" className="flex items-center">
-          <span
-            className="text-white tracking-[0.35em] text-2xl font-light"
-            style={{ fontFamily: "'Oswald', sans-serif" }}
-          >
-            RELOAD
-          </span>
+          <img
+            src="https://customer-assets.emergentagent.com/job_content-124/artifacts/bq05qpbf_photo_2026-06-20%2007.14.45.jpeg"
+            alt="Fortis Fitness"
+            className="h-10 md:h-12 w-auto select-none"
+            style={{ mixBlendMode: 'screen', filter: 'contrast(3.5) brightness(0.85)' }}
+            draggable="false"
+          />
         </Link>
 
         <nav className="hidden lg:flex items-center gap-8">

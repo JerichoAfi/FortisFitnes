@@ -10,12 +10,13 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
           {/* LEFT */}
           <div>
-            <div
-              className="text-white tracking-[0.35em] text-3xl font-light mb-6"
-              style={{ fontFamily: "'Oswald', sans-serif" }}
-            >
-              RELOAD
-            </div>
+            <img
+              src="https://customer-assets.emergentagent.com/job_content-124/artifacts/bq05qpbf_photo_2026-06-20%2007.14.45.jpeg"
+              alt="Fortis Fitness"
+              className="h-16 md:h-20 w-auto select-none mb-6"
+              style={{ mixBlendMode: 'screen', filter: 'contrast(3.5) brightness(0.85)' }}
+              draggable="false"
+            />
             <p className="text-white/60 text-sm leading-relaxed mb-8 max-w-md">
               Lebih dari tempat untuk berolahraga &mdash; Fortis Fitness adalah
               ruang untuk menjadi lebih kuat, lebih sehat, dan terus berkembang
