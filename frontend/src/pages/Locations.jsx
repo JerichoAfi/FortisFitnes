@@ -57,8 +57,8 @@ const Locations = () => {
 
         <div className="relative z-10 text-center px-6 max-w-4xl">
           <p
-            className="text-white/80 text-[11px] md:text-xs tracking-[0.4em] uppercase mb-6"
-            style={{ fontFamily: "'Inter', sans-serif" }}
+            className="text-[#e11d2e] text-[11px] md:text-xs tracking-[0.4em] uppercase mb-6"
+            style={{ fontFamily: "'Inter', sans-serif", fontWeight: 600 }}
           >
             Locations
           </p>
@@ -92,7 +92,7 @@ const Locations = () => {
               </div>
 
               <div>
-                <p className="text-white/45 text-[11px] tracking-[0.4em] uppercase mb-4">
+                <p className="text-[#e11d2e] text-[11px] tracking-[0.4em] uppercase mb-4" style={{ fontWeight: 600 }}>
                   Branch {String(idx + 1).padStart(2, '0')}
                 </p>
                 <h2
@@ -168,7 +168,7 @@ const Locations = () => {
                   href={loc.maps}
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center gap-2 border border-white text-white text-xs uppercase tracking-[0.25em] px-7 py-3.5 hover:bg-white hover:text-black transition-all duration-300"
+                  className="inline-flex items-center gap-2 bg-[#e11d2e] border border-[#e11d2e] text-white text-xs uppercase tracking-[0.25em] px-7 py-3.5 hover:bg-[#c81729] hover:border-[#c81729] transition-all duration-300"
                 >
                   Lihat Lokasi <ArrowUpRight size={14} />
                 </a>
@@ -202,7 +202,7 @@ const Locations = () => {
             </div>
 
             <div>
-              <p className="text-white/45 text-[11px] tracking-[0.4em] uppercase mb-4">
+              <p className="text-[#e11d2e] text-[11px] tracking-[0.4em] uppercase mb-4" style={{ fontWeight: 600 }}>
                 Branch 03
               </p>
               <h2

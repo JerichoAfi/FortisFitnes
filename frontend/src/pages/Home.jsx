@@ -142,7 +142,7 @@ const Home = () => {
               href={WA.kepanjen}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center justify-center border border-white text-white text-xs uppercase tracking-[0.25em] px-10 py-4 hover:bg-white hover:text-black transition-all duration-300"
+              className="inline-flex items-center justify-center bg-[#e11d2e] border border-[#e11d2e] text-white text-xs uppercase tracking-[0.25em] px-10 py-4 hover:bg-[#c81729] hover:border-[#c81729] transition-all duration-300"
             >
               Mulai Berlatih
             </a>
@@ -190,13 +190,13 @@ const Home = () => {
                     >
                       {loc.name}
                     </h3>
-                    <div className="flex items-center gap-2 border border-white/80 px-6 py-3 group-hover:bg-white group-hover:text-black transition-all duration-300">
-                      <span className="text-white text-[10px] uppercase tracking-[0.25em] group-hover:text-black">
+                    <div className="flex items-center gap-2 border border-[#e11d2e] px-6 py-3 group-hover:bg-[#e11d2e] transition-all duration-300">
+                      <span className="text-white text-[10px] uppercase tracking-[0.25em]">
                         Discover More
                       </span>
                       <ArrowUpRight
                         size={14}
-                        className="text-white group-hover:text-black"
+                        className="text-white"
                       />
                     </div>
                   </div>
@@ -276,7 +276,7 @@ const Home = () => {
             </p>
             <Link
               to="/our-trainer"
-              className="inline-flex items-center justify-center border border-white text-white text-xs uppercase tracking-[0.25em] px-10 py-4 hover:bg-white hover:text-black transition-all duration-300"
+              className="inline-flex items-center justify-center bg-[#e11d2e] border border-[#e11d2e] text-white text-xs uppercase tracking-[0.25em] px-10 py-4 hover:bg-[#c81729] hover:border-[#c81729] transition-all duration-300"
             >
               Kenali Pelatih Kami
             </Link>

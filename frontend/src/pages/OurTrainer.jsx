@@ -43,8 +43,8 @@ const OurTrainer = () => {
 
         <div className="relative z-10 text-center px-6 max-w-4xl">
           <p
-            className="text-white/80 text-[11px] md:text-xs tracking-[0.4em] uppercase mb-6"
-            style={{ fontFamily: "'Inter', sans-serif" }}
+            className="text-[#e11d2e] text-[11px] md:text-xs tracking-[0.4em] uppercase mb-6"
+            style={{ fontFamily: "'Inter', sans-serif", fontWeight: 600 }}
           >
             Our Trainer
           </p>
@@ -101,8 +101,8 @@ const OurTrainer = () => {
                 onClick={() => setFilter(f)}
                 className={`px-6 py-3 text-xs uppercase tracking-[0.25em] border transition-all ${
                   filter === f
-                    ? 'bg-white text-black border-white'
-                    : 'border-white/20 text-white/70 hover:border-white/60 hover:text-white'
+                    ? 'bg-[#e11d2e] text-white border-[#e11d2e]'
+                    : 'border-white/20 text-white/70 hover:border-[#e11d2e] hover:text-white'
                 }`}
               >
                 {f}
@@ -131,7 +131,7 @@ const OurTrainer = () => {
               href={WA.kepanjen}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center justify-center border border-white text-white text-xs uppercase tracking-[0.25em] px-8 py-4 hover:bg-white hover:text-black transition-all duration-300"
+              className="inline-flex items-center justify-center bg-[#e11d2e] border border-[#e11d2e] text-white text-xs uppercase tracking-[0.25em] px-8 py-4 hover:bg-[#c81729] hover:border-[#c81729] transition-all duration-300"
             >
               Apply Now
             </a>

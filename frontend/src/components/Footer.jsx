@@ -25,7 +25,7 @@ const Footer = () => {
                 href={WA.ig}
                 target="_blank"
                 rel="noreferrer"
-                className="w-11 h-11 border border-white/30 flex items-center justify-center text-white/80 hover:bg-white hover:text-black transition-all duration-300"
+                className="w-11 h-11 border border-white/30 flex items-center justify-center text-white/80 hover:bg-[#e11d2e] hover:border-[#e11d2e] hover:text-white transition-all duration-300"
                 aria-label="Instagram"
               >
                 <Instagram size={18} />
@@ -34,7 +34,7 @@ const Footer = () => {
                 href="http://wa.me/082333327332"
                 target="_blank"
                 rel="noreferrer"
-                className="w-11 h-11 border border-white/30 flex items-center justify-center text-white/80 hover:bg-white hover:text-black transition-all duration-300"
+                className="w-11 h-11 border border-white/30 flex items-center justify-center text-white/80 hover:bg-[#e11d2e] hover:border-[#e11d2e] hover:text-white transition-all duration-300"
                 aria-label="WhatsApp"
               >
                 <MessageCircle size={18} />

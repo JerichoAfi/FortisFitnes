@@ -151,8 +151,8 @@ const BookClass = () => {
 
         <div className="relative z-10 text-center px-6 max-w-4xl">
           <p
-            className="text-white/80 text-[11px] md:text-xs tracking-[0.4em] uppercase mb-6"
-            style={{ fontFamily: "'Inter', sans-serif" }}
+            className="text-[#e11d2e] text-[11px] md:text-xs tracking-[0.4em] uppercase mb-6"
+            style={{ fontFamily: "'Inter', sans-serif", fontWeight: 600 }}
           >
             Book a Class
           </p>
@@ -197,7 +197,7 @@ const BookClass = () => {
       <section className="bg-[#0a0a0a] py-20 md:py-28 border-t border-white/5">
         <div className="max-w-[1100px] mx-auto px-6 lg:px-12">
           <div className="text-center mb-14">
-            <p className="text-white/55 text-[11px] tracking-[0.4em] uppercase mb-4">
+            <p className="text-[#e11d2e] text-[11px] tracking-[0.4em] uppercase mb-4" style={{ fontWeight: 600 }}>
               June Class
             </p>
             <h2
@@ -244,17 +244,17 @@ const BookClass = () => {
           </div>
 
           {/* Info tambahan */}
-          <div className="mt-12 max-w-2xl mx-auto text-center bg-black/40 border border-white/10 rounded-2xl px-6 py-7">
-            <p className="text-white/55 text-[11px] tracking-[0.4em] uppercase mb-4">
+          <div className="mt-12 max-w-2xl mx-auto text-center bg-black/40 border border-[#e11d2e]/30 rounded-2xl px-6 py-7">
+            <p className="text-[#e11d2e] text-[11px] tracking-[0.4em] uppercase mb-4" style={{ fontWeight: 600 }}>
               Info Tambahan
             </p>
-            <p className="text-white/80 text-sm md:text-base leading-relaxed mb-2">
+            <p className="text-white/85 text-sm md:text-base leading-relaxed mb-2">
               Reservasi kelas dibuka setiap H-1 pukul 09.00 via WhatsApp:{' '}
               <a
                 href={WA.kepanjen}
                 target="_blank"
                 rel="noreferrer"
-                className="text-white underline underline-offset-4 hover:text-white/80 transition-colors"
+                className="text-[#e11d2e] font-medium underline underline-offset-4 hover:text-[#c81729] transition-colors"
               >
                 0823-3332-7332
               </a>

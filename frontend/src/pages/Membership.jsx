@@ -92,7 +92,7 @@ const GRAHA_FACILITIES = [
 
 const PlanCard = ({ duration, features, tagline, ctaHref }) => {
   return (
-    <div className="h-full bg-[#1c1c1c] rounded-2xl px-7 py-9 flex flex-col items-center text-center border border-white/10 hover:border-white/40 transition-colors duration-300">
+    <div className="h-full bg-[#1c1c1c] rounded-2xl px-7 py-9 flex flex-col items-center text-center border border-white/10 hover:border-[#e11d2e] transition-colors duration-300">
       <h3
         className="text-white text-2xl md:text-[28px] tracking-[0.08em] mb-7"
         style={{ fontFamily: "'Oswald', sans-serif", fontWeight: 600 }}
@@ -117,7 +117,7 @@ const PlanCard = ({ duration, features, tagline, ctaHref }) => {
         href={ctaHref}
         target="_blank"
         rel="noreferrer"
-        className="inline-flex items-center justify-center gap-2 border border-white text-white text-[11px] uppercase tracking-[0.25em] px-6 py-3 hover:bg-white hover:text-black transition-all duration-300 w-full"
+        className="inline-flex items-center justify-center gap-2 bg-[#e11d2e] border border-[#e11d2e] text-white text-[11px] uppercase tracking-[0.25em] px-6 py-3 hover:bg-[#c81729] hover:border-[#c81729] transition-all duration-300 w-full"
       >
         Register Now <ArrowRight size={13} />
       </a>
@@ -188,8 +188,8 @@ const Membership = () => {
 
         <div className="relative z-10 text-center px-6 max-w-4xl">
           <p
-            className="text-white/80 text-[11px] md:text-xs tracking-[0.4em] uppercase mb-6"
-            style={{ fontFamily: "'Inter', sans-serif" }}
+            className="text-[#e11d2e] text-[11px] md:text-xs tracking-[0.4em] uppercase mb-6"
+            style={{ fontFamily: "'Inter', sans-serif", fontWeight: 600 }}
           >
             Membership
           </p>
@@ -222,7 +222,7 @@ const Membership = () => {
             >
               FORTIS FITNESS KEPANJEN
             </h2>
-            <p className="text-white/65 text-sm md:text-base tracking-[0.25em] uppercase">
+            <p className="text-[#e11d2e] text-sm md:text-base tracking-[0.25em] uppercase" style={{ fontWeight: 600 }}>
               Premium Gym Experience
             </p>
           </div>
@@ -268,7 +268,7 @@ const Membership = () => {
             >
               FORTIS FITNESS GRAHA KENCANA
             </h2>
-            <p className="text-white/65 text-sm md:text-base tracking-[0.25em] uppercase">
+            <p className="text-[#e11d2e] text-sm md:text-base tracking-[0.25em] uppercase" style={{ fontWeight: 600 }}>
               Private Gym Series
             </p>
           </div>
@@ -304,7 +304,7 @@ const Membership = () => {
                     href={WA.graha}
                     target="_blank"
                     rel="noreferrer"
-                    className="inline-flex items-center justify-center gap-2 border border-white text-white text-[11px] uppercase tracking-[0.25em] px-6 py-3 hover:bg-white hover:text-black transition-all duration-300"
+                    className="inline-flex items-center justify-center gap-2 bg-[#e11d2e] border border-[#e11d2e] text-white text-[11px] uppercase tracking-[0.25em] px-6 py-3 hover:bg-[#c81729] hover:border-[#c81729] transition-all duration-300"
                   >
                     {m.cta} <ArrowRight size={13} />
                   </a>

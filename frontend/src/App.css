@@ -14,8 +14,40 @@ body {
 }
 
 ::selection {
-  background: #fff;
-  color: #000;
+  background: #e11d2e;
+  color: #fff;
+}
+
+:root {
+  --fortis-red: #e11d2e;
+  --fortis-red-hover: #c81729;
+  --fortis-dark: #141414;
+  --fortis-card: #1c1c1c;
+  --fortis-line: #2a2a2a;
+  --fortis-light-gray: #b3b3b3;
+}
+
+/* Brand button helpers */
+.btn-fortis {
+  background: var(--fortis-red);
+  border: 1px solid var(--fortis-red);
+  color: #fff;
+  transition: background 240ms ease, border 240ms ease, transform 240ms ease;
+}
+.btn-fortis:hover {
+  background: var(--fortis-red-hover);
+  border-color: var(--fortis-red-hover);
+}
+.btn-outline-red {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  transition: background 240ms ease, border 240ms ease, color 240ms ease;
+}
+.btn-outline-red:hover {
+  background: var(--fortis-red);
+  border-color: var(--fortis-red);
+  color: #fff;
 }
 
 /* Custom scrollbar */
@@ -29,5 +61,5 @@ body {
   background: #2a2a2a;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #444;
+  background: var(--fortis-red);
 }

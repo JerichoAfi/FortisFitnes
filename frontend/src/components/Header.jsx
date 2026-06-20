@@ -37,8 +37,10 @@ const Header = () => {
               key={l.label}
               to={l.to}
               className={({ isActive }) =>
-                `text-[11px] uppercase tracking-[0.18em] transition-colors duration-200 ${
-                  isActive ? 'text-white' : 'text-white/70 hover:text-white'
+                `relative text-[11px] uppercase tracking-[0.18em] transition-colors duration-200 ${
+                  isActive
+                    ? 'text-white after:absolute after:-bottom-2 after:left-0 after:right-0 after:h-[2px] after:bg-[#e11d2e]'
+                    : 'text-white/70 hover:text-white'
                 }`
               }
               style={{ fontFamily: "'Inter', sans-serif" }}
@@ -52,7 +54,7 @@ const Header = () => {
           href={WA.kepanjen}
           target="_blank"
           rel="noreferrer"
-          className="hidden lg:inline-flex items-center justify-center border border-white/70 text-white text-[11px] uppercase tracking-[0.2em] px-5 py-3 hover:bg-white hover:text-black transition-all duration-300"
+          className="hidden lg:inline-flex items-center justify-center bg-[#e11d2e] border border-[#e11d2e] text-white text-[11px] uppercase tracking-[0.2em] px-5 py-3 hover:bg-[#c81729] hover:border-[#c81729] transition-all duration-300"
         >
           Mulai Berlatih
         </a>
@@ -80,7 +82,7 @@ const Header = () => {
               href={WA.kepanjen}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center justify-center border border-white/70 text-white text-xs uppercase tracking-[0.2em] px-5 py-3 w-fit"
+              className="inline-flex items-center justify-center bg-[#e11d2e] border border-[#e11d2e] text-white text-xs uppercase tracking-[0.2em] px-5 py-3 w-fit"
             >
               Mulai Berlatih
             </a>
