@@ -1,63 +1,202 @@
 import React from 'react';
-import { ArrowRight } from 'lucide-react';
-import PageHero from '../components/PageHero';
-import { IMAGES, EVENTS, WA } from '../data/mock';
+import { Sparkles, Dumbbell, Footprints, Award, Flower2 } from 'lucide-react';
+import { IMAGES } from '../data/mock';
+
+const EVENTS = [
+  {
+    id: 'special-class',
+    title: 'SPECIAL CLASS',
+    subtitle: 'Independence Day, Fortis Anniversary, etc',
+    Icon: Sparkles,
+    layout: 'a',
+    photos: [
+      IMAGES.yoga,
+      IMAGES.pilates,
+      IMAGES.boxing,
+      IMAGES.bjj,
+      IMAGES.equip3,
+    ],
+  },
+  {
+    id: 'community-games',
+    title: 'FORTIS COMMUNITY GAMES',
+    subtitle: 'a community driven calisthenics competition',
+    Icon: Dumbbell,
+    layout: 'row5',
+    photos: [
+      IMAGES.equip2,
+      IMAGES.equip1,
+      IMAGES.battle,
+      IMAGES.equip3,
+      IMAGES.bjj,
+    ],
+  },
+  {
+    id: 'community-run',
+    title: 'FORTIS COMMUNITY RUN',
+    subtitle: 'in collaboration with Klub Of Traps',
+    Icon: Footprints,
+    layout: 'row4',
+    photos: [IMAGES.gym1, IMAGES.gym2, IMAGES.gym3, IMAGES.battle],
+  },
+  {
+    id: 'certified-instructor',
+    title: 'CERTIFIED FITNESS INSTRUCTOR',
+    subtitle: 'by Prima Fit Academy',
+    Icon: Award,
+    layout: 'b',
+    photos: [IMAGES.trainer1, IMAGES.bjj, IMAGES.equip1, IMAGES.boxing],
+  },
+  {
+    id: 'serenity-flow',
+    title: 'SERENITY FLOW',
+    subtitle: "'Yoga Among The Rice Fields'",
+    Icon: Flower2,
+    layout: 'b',
+    photos: [IMAGES.yoga, IMAGES.trainer2, IMAGES.pilates, IMAGES.yoga],
+  },
+];
+
+const EventHeader = ({ Icon, title, subtitle }) => (
+  <div className="flex items-center gap-5 mb-6">
+    <div className="w-14 h-14 md:w-16 md:h-16 rounded-xl bg-[#e11d2e] flex items-center justify-center flex-shrink-0">
+      <Icon className="text-white" size={32} strokeWidth={1.5} />
+    </div>
+    <div className="w-px h-14 md:h-16 bg-[#e11d2e]/70" />
+    <div className="min-w-0">
+      <h3
+        className="text-white text-xl md:text-2xl lg:text-3xl tracking-[0.02em] leading-tight"
+        style={{ fontFamily: "'Oswald', sans-serif", fontWeight: 700 }}
+      >
+        {title}
+      </h3>
+      <p className="text-white/80 text-sm md:text-base mt-1">{subtitle}</p>
+    </div>
+  </div>
+);
+
+const PhotoCollage = ({ photos, layout }) => {
+  // Various collage layouts mirroring the reference image
+  if (layout === 'row5') {
+    return (
+      <div className="grid grid-cols-2 md:grid-cols-5 gap-3">
+        {photos.slice(0, 5).map((src, i) => (
+          <div key={i} className="aspect-square rounded-xl overflow-hidden">
+            <img
+              src={src}
+              alt=""
+              className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+              loading="lazy"
+            />
+          </div>
+        ))}
+      </div>
+    );
+  }
+
+  if (layout === 'row4') {
+    return (
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+        {photos.slice(0, 4).map((src, i) => (
+          <div key={i} className="aspect-square rounded-xl overflow-hidden">
+            <img
+              src={src}
+              alt=""
+              className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+              loading="lazy"
+            />
+          </div>
+        ))}
+      </div>
+    );
+  }
+
+  if (layout === 'b') {
+    // 3 large + 1 stacked column variant (like Certified Fitness Instructor reference)
+    return (
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+        <div className="aspect-[4/3] rounded-xl overflow-hidden">
+          <img src={photos[0]} alt="" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" loading="lazy" />
+        </div>
+        <div className="aspect-[4/3] rounded-xl overflow-hidden">
+          <img src={photos[1]} alt="" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" loading="lazy" />
+        </div>
+        <div className="grid grid-rows-2 gap-3">
+          <div className="rounded-xl overflow-hidden">
+            <img src={photos[2]} alt="" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" loading="lazy" />
+          </div>
+          <div className="rounded-xl overflow-hidden">
+            <img src={photos[3]} alt="" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // layout 'a' — large left + grid of smaller photos
+  return (
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+      <div className="aspect-[4/3] md:aspect-auto rounded-xl overflow-hidden">
+        <img
+          src={photos[0]}
+          alt=""
+          className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+          loading="lazy"
+        />
+      </div>
+      <div className="grid grid-cols-2 gap-3">
+        <div className="aspect-square rounded-xl overflow-hidden col-span-2">
+          <img src={photos[1]} alt="" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" loading="lazy" />
+        </div>
+        <div className="aspect-square rounded-xl overflow-hidden">
+          <img src={photos[2]} alt="" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" loading="lazy" />
+        </div>
+        <div className="aspect-square rounded-xl overflow-hidden">
+          <img src={photos[3]} alt="" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const EventCard = ({ event }) => {
+  return (
+    <div className="bg-[#0a0a0a] border border-white/15 rounded-3xl p-6 md:p-8 hover:border-[#e11d2e] transition-colors duration-300">
+      <EventHeader Icon={event.Icon} title={event.title} subtitle={event.subtitle} />
+      <PhotoCollage photos={event.photos} layout={event.layout} />
+    </div>
+  );
+};
 
 const Events = () => {
   return (
     <>
-      <PageHero
-        eyebrow="Events"
-        title="BUILT WITH THE COMMUNITY"
-        subtitle="Signature classes, competitions, community runs, and education programs - more than just workouts."
-        image={IMAGES.battle}
-      />
+      {/* HERO - FULL FRAME, ONLY EVENTS TITLE */}
+      <section className="relative h-screen min-h-[700px] w-full overflow-hidden flex items-center justify-center">
+        <img
+          src={IMAGES.battle}
+          alt="Events"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-black/40 to-black/85" />
 
-      {/* INTRO / COMPANY PROFILE STYLE */}
-      <section className="bg-black py-20 md:py-24">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <p className="text-white/50 text-[11px] tracking-[0.4em] uppercase mb-4">Our Story</p>
-          <h2 className="text-white text-3xl md:text-5xl tracking-[0.04em] mb-6" style={{ fontFamily: "'Oswald', sans-serif", fontWeight: 500 }}>
-            MORE THAN A GYM. <br /> A MOVEMENT.
-          </h2>
-          <p className="text-white/70 leading-relaxed">
-            Reload was born from a simple belief: fitness is more powerful when shared. We host events that bring our community together &mdash; from sweat-soaked competitions to mindful retreats &mdash; building bonds that go far beyond the gym floor.
-          </p>
+        <div className="relative z-10 text-center px-6">
+          <h1
+            className="text-white text-7xl md:text-9xl lg:text-[180px] tracking-[0.02em] leading-[0.95]"
+            style={{ fontFamily: "'Oswald', sans-serif", fontWeight: 700 }}
+          >
+            EVENTS
+          </h1>
         </div>
       </section>
 
-      {/* EVENT LIST */}
-      <section className="bg-[#0a0a0a] py-20 md:py-24 border-t border-white/5">
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-12 space-y-16">
-          {EVENTS.map((e, i) => (
-            <div key={e.id} className={`grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12 items-center ${i % 2 === 1 ? 'md:[&>div:first-child]:order-2' : ''}`}>
-              <div className="md:col-span-7 relative overflow-hidden aspect-[16/10] group">
-                <img src={e.image} alt={e.name} className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
-                <div className="absolute inset-0 bg-gradient-to-tr from-black/60 to-transparent" />
-                <span className="absolute top-5 left-5 text-[10px] uppercase tracking-[0.3em] text-white border border-white/40 px-3 py-1 bg-black/40 backdrop-blur-sm">
-                  {e.tag}
-                </span>
-              </div>
-              <div className="md:col-span-5">
-                <p className="text-white/40 text-[11px] tracking-[0.4em] uppercase mb-3">Event {String(i + 1).padStart(2, '0')}</p>
-                <h3 className="text-white text-3xl md:text-4xl lg:text-5xl tracking-[0.04em] mb-5" style={{ fontFamily: "'Oswald', sans-serif", fontWeight: 500 }}>{e.name}</h3>
-                <p className="text-white/70 leading-relaxed mb-7">{e.description}</p>
-                <a href={WA.kepanjen} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 border border-white text-white text-xs uppercase tracking-[0.25em] px-6 py-3 hover:bg-white hover:text-black transition-all duration-300">
-                  Learn More <ArrowRight size={14} />
-                </a>
-              </div>
-            </div>
+      {/* EVENT CARDS */}
+      <section className="bg-black py-20 md:py-28">
+        <div className="max-w-[1200px] mx-auto px-6 lg:px-10 space-y-8">
+          {EVENTS.map((e) => (
+            <EventCard key={e.id} event={e} />
           ))}
         </div>
-      </section>
-
-      {/* CTA */}
-      <section className="bg-black py-20 text-center px-6">
-        <h3 className="text-white text-3xl md:text-4xl tracking-[0.04em] mb-4" style={{ fontFamily: "'Oswald', sans-serif", fontWeight: 500 }}>JOIN THE NEXT ONE</h3>
-        <p className="text-white/70 max-w-xl mx-auto mb-8">Be the first to hear about upcoming events, classes and community programs.</p>
-        <a href={WA.kepanjen} target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-2 border border-white text-white text-xs uppercase tracking-[0.25em] px-8 py-4 hover:bg-white hover:text-black transition-all duration-300">
-          Join the Community
-        </a>
       </section>
     </>
   );

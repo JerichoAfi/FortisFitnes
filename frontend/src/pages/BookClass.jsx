@@ -197,9 +197,6 @@ const BookClass = () => {
       <section className="bg-[#0a0a0a] py-20 md:py-28 border-t border-white/5">
         <div className="max-w-[1100px] mx-auto px-6 lg:px-12">
           <div className="text-center mb-14">
-            <p className="text-[#e11d2e] text-[11px] tracking-[0.4em] uppercase mb-4" style={{ fontWeight: 600 }}>
-              June Class
-            </p>
             <h2
               className="text-white text-4xl md:text-5xl lg:text-6xl tracking-[0.04em]"
               style={{ fontFamily: "'Oswald', sans-serif", fontWeight: 600 }}
