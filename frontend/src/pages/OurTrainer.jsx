@@ -35,9 +35,9 @@ const TRAINERS = [
   },
   {
     id: 6,
-    name: 'COMING SOON',
+    name: 'DIAN',
     location: 'GRAHA KENCANA',
-    image: null,
+    image: 'https://customer-assets.emergentagent.com/job_content-124/artifacts/bh6xwvof_6.jpg',
   },
 ];
 
@@ -161,7 +161,7 @@ const OurTrainer = () => {
             ))}
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-5 max-w-[1100px] mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-7 max-w-[1300px] mx-auto">
             {list.map((t) => (
               <TrainerCard key={t.id} t={t} />
             ))}
