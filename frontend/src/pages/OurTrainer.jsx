@@ -1,25 +1,87 @@
 import React, { useState } from 'react';
 import { User } from 'lucide-react';
-import { IMAGES, TRAINERS_KEPANJEN, TRAINERS_GRAHA, WA } from '../data/mock';
+import { IMAGES, WA } from '../data/mock';
+
+const TRAINERS = [
+  {
+    id: 1,
+    name: 'RAGIL',
+    location: 'KEPANJEN',
+    image: 'https://customer-assets.emergentagent.com/job_content-124/artifacts/03l0wrmd_1.jpg',
+  },
+  {
+    id: 2,
+    name: 'MUNIF',
+    location: 'KEPANJEN',
+    image: 'https://customer-assets.emergentagent.com/job_content-124/artifacts/44rfr1pv_2.jpg',
+  },
+  {
+    id: 3,
+    name: 'TASYA',
+    location: 'KEPANJEN',
+    image: 'https://customer-assets.emergentagent.com/job_content-124/artifacts/monnyuqa_3.jpg',
+  },
+  {
+    id: 4,
+    name: 'IDA',
+    location: 'GRAHA KENCANA',
+    image: 'https://customer-assets.emergentagent.com/job_content-124/artifacts/ejmenks0_4.jpg',
+  },
+  {
+    id: 5,
+    name: 'ALDO',
+    location: 'GRAHA KENCANA',
+    image: 'https://customer-assets.emergentagent.com/job_content-124/artifacts/pgws2k3e_5.jpg',
+  },
+  {
+    id: 6,
+    name: 'COMING SOON',
+    location: 'GRAHA KENCANA',
+    image: null, // placeholder for the 6th coach
+  },
+];
 
 const TrainerCard = ({ t }) => {
+  const isPlaceholder = !t.image;
   return (
-    <div className="group relative overflow-hidden border border-white/10 bg-[#0a0a0a] rounded-2xl">
-      <div className="aspect-[3/4] bg-gradient-to-b from-[#1a1a1a] to-[#0a0a0a] flex items-center justify-center">
-        <div className="flex flex-col items-center text-white/40">
-          <User size={64} strokeWidth={1} />
-          <p className="mt-3 text-[10px] uppercase tracking-[0.3em]">Photo Coming Soon</p>
+    <div className="group relative overflow-hidden rounded-2xl bg-black border border-white/10 hover:border-[#e11d2e] transition-colors duration-300">
+      <div className="relative aspect-[3/4] bg-black">
+        {isPlaceholder ? (
+          <div className="absolute inset-0 flex flex-col items-center justify-center text-white/30 gap-3">
+            <User size={80} strokeWidth={1} />
+            <p className="text-[10px] uppercase tracking-[0.3em]">Photo Coming Soon</p>
+          </div>
+        ) : (
+          <img
+            src={t.image}
+            alt={t.name}
+            className="absolute inset-0 w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-[1.03]"
+            loading="lazy"
+          />
+        )}
+
+        {/* Subtle bottom gradient for legibility */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent pointer-events-none" />
+
+        {/* Name overlay - bottom */}
+        <div className="absolute inset-x-0 bottom-0 px-5 pb-5">
+          <h3
+            className="text-white text-3xl md:text-4xl lg:text-5xl tracking-[0.02em] leading-none"
+            style={{ fontFamily: "'Oswald', sans-serif", fontWeight: 800 }}
+          >
+            {t.name}
+          </h3>
         </div>
       </div>
-      <div className="p-5 border-t border-white/10">
-        <p className="text-white/50 text-[10px] uppercase tracking-[0.25em] mb-1">{t.location}</p>
-        <h3
-          className="text-white text-xl tracking-wider"
-          style={{ fontFamily: "'Oswald', sans-serif", fontWeight: 500 }}
+
+      {/* Location bar - big red strip */}
+      <div className="bg-[#e11d2e] px-5 py-4 text-center">
+        <p
+          className="text-white text-lg md:text-xl tracking-[0.18em]"
+          style={{ fontFamily: "'Oswald', sans-serif", fontWeight: 700 }}
         >
-          {t.name}
-        </h3>
-        <p className="text-white/65 text-xs mt-1">{t.role}</p>
+          {t.location}
+        </p>
       </div>
     </div>
   );
@@ -27,8 +89,10 @@ const TrainerCard = ({ t }) => {
 
 const OurTrainer = () => {
   const [filter, setFilter] = useState('All');
-  const all = [...TRAINERS_KEPANJEN, ...TRAINERS_GRAHA];
-  const list = filter === 'All' ? all : filter === 'Kepanjen' ? TRAINERS_KEPANJEN : TRAINERS_GRAHA;
+  const list =
+    filter === 'All'
+      ? TRAINERS
+      : TRAINERS.filter((t) => t.location.toUpperCase().replace(' ', '') === filter.toUpperCase().replace(' ', ''));
 
   return (
     <>
@@ -67,7 +131,7 @@ const OurTrainer = () => {
       </section>
 
       {/* HEADLINE - OUTLINE + FILLED */}
-      <section className="bg-black py-24 md:py-32">
+      <section className="bg-black pt-20 md:pt-28 pb-6 md:pb-10">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
           <div className="relative flex flex-col items-center justify-center text-center mb-4">
             <span
@@ -94,7 +158,7 @@ const OurTrainer = () => {
       {/* TRAINERS LIST */}
       <section className="bg-black pb-20 md:pb-28">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
-          <div className="flex flex-wrap justify-center gap-2 mb-12">
+          <div className="flex flex-wrap justify-center gap-2 mb-12 mt-6">
             {['All', 'Kepanjen', 'Graha Kencana'].map((f) => (
               <button
                 key={f}
@@ -110,9 +174,9 @@ const OurTrainer = () => {
             ))}
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
             {list.map((t) => (
-              <TrainerCard key={t.location + t.id} t={t} />
+              <TrainerCard key={t.id} t={t} />
             ))}
           </div>
 
