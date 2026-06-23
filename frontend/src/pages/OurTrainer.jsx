@@ -24,7 +24,7 @@ const TRAINERS = [
   {
     id: 4,
     name: 'IDA',
-    location: 'GRAHA KENCANA',
+    location: 'KEPANJEN',
     image: 'https://customer-assets.emergentagent.com/job_content-124/artifacts/ejmenks0_4.jpg',
   },
   {
@@ -37,7 +37,7 @@ const TRAINERS = [
     id: 6,
     name: 'COMING SOON',
     location: 'GRAHA KENCANA',
-    image: null, // placeholder for the 6th coach
+    image: null,
   },
 ];
 
@@ -45,39 +45,26 @@ const TrainerCard = ({ t }) => {
   const isPlaceholder = !t.image;
   return (
     <div className="group relative overflow-hidden rounded-2xl bg-black border border-white/10 hover:border-[#e11d2e] transition-colors duration-300">
-      <div className="relative aspect-[3/4] bg-black">
+      <div className="relative aspect-square bg-black">
         {isPlaceholder ? (
           <div className="absolute inset-0 flex flex-col items-center justify-center text-white/30 gap-3">
-            <User size={80} strokeWidth={1} />
+            <User size={64} strokeWidth={1} />
             <p className="text-[10px] uppercase tracking-[0.3em]">Photo Coming Soon</p>
           </div>
         ) : (
           <img
             src={t.image}
             alt={t.name}
-            className="absolute inset-0 w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-[1.03]"
+            className="absolute inset-0 w-full h-full object-contain"
             loading="lazy"
           />
         )}
-
-        {/* Subtle bottom gradient for legibility */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent pointer-events-none" />
-
-        {/* Name overlay - bottom */}
-        <div className="absolute inset-x-0 bottom-0 px-5 pb-5">
-          <h3
-            className="text-white text-3xl md:text-4xl lg:text-5xl tracking-[0.02em] leading-none"
-            style={{ fontFamily: "'Oswald', sans-serif", fontWeight: 800 }}
-          >
-            {t.name}
-          </h3>
-        </div>
       </div>
 
-      {/* Location bar - big red strip */}
-      <div className="bg-[#e11d2e] px-5 py-4 text-center">
+      {/* Location bar - red strip */}
+      <div className="bg-[#e11d2e] px-4 py-3 text-center">
         <p
-          className="text-white text-lg md:text-xl tracking-[0.18em]"
+          className="text-white text-base md:text-lg tracking-[0.18em]"
           style={{ fontFamily: "'Oswald', sans-serif", fontWeight: 700 }}
         >
           {t.location}
@@ -174,7 +161,7 @@ const OurTrainer = () => {
             ))}
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-5 max-w-[1100px] mx-auto">
             {list.map((t) => (
               <TrainerCard key={t.id} t={t} />
             ))}
