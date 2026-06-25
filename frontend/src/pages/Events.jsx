@@ -36,7 +36,12 @@ const EVENTS = [
     title: 'SERENITY FLOW',
     subtitle: "'Yoga Among The Rice Fields'",
     Icon: Flower2,
-    photos: [IMAGES.yoga, IMAGES.trainer2, IMAGES.pilates, IMAGES.yoga, IMAGES.pilates],
+    photos: [
+      'https://customer-assets.emergentagent.com/job_content-124/artifacts/hglr28to_Yoga%20Serenity%20Flow%20Fortiss%20%2853%20of%20676%29.JPEG',
+      'https://customer-assets.emergentagent.com/job_content-124/artifacts/n94382kd_Yoga%20Serenity%20Flow%20Fortiss%20%28112%20of%20676%29.JPEG',
+      'https://customer-assets.emergentagent.com/job_content-124/artifacts/620sdldg_Yoga%20Serenity%20Flow%20Fortiss%20%28187%20of%20676%29.JPEG',
+      'https://customer-assets.emergentagent.com/job_content-124/artifacts/npyoygmq_Yoga%20Serenity%20Flow%20Fortiss%20%28635%20of%20676%29.JPEG',
+    ],
   },
 ];
 
@@ -61,19 +66,34 @@ const EventCard = ({ event }) => {
         </div>
       </div>
 
-      {/* Uniform 5-photo row collage */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 md:gap-4">
-        {photos.slice(0, 5).map((src, i) => (
-          <div key={i} className="aspect-[3/4] rounded-2xl overflow-hidden">
-            <img
-              src={src}
-              alt=""
-              className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
-              loading="lazy"
-            />
-          </div>
-        ))}
-      </div>
+      {/* Photo collage — square aspect for 4-photo events, portrait 3:4 for 5-photo events */}
+      {photos.length === 4 ? (
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
+          {photos.map((src, i) => (
+            <div key={i} className="aspect-square rounded-2xl overflow-hidden">
+              <img
+                src={src}
+                alt=""
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
+          ))}
+        </div>
+      ) : (
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 md:gap-4">
+          {photos.slice(0, 5).map((src, i) => (
+            <div key={i} className="aspect-[3/4] rounded-2xl overflow-hidden">
+              <img
+                src={src}
+                alt=""
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                loading="lazy"
+              />
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   );
 };
