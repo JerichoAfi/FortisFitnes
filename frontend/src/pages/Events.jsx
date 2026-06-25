@@ -15,7 +15,14 @@ const EVENTS = [
     title: 'FORTIS COMMUNITY GAMES',
     subtitle: 'a community driven calisthenics competition',
     Icon: Dumbbell,
-    photos: [IMAGES.equip2, IMAGES.equip1, IMAGES.battle, IMAGES.equip3, IMAGES.bjj],
+    square: true,
+    photos: [
+      'https://customer-assets.emergentagent.com/job_content-124/artifacts/o7pntx9e_IMG_2503.jpeg',
+      'https://customer-assets.emergentagent.com/job_content-124/artifacts/b3xu84l2_IMG_2507.jpeg',
+      'https://customer-assets.emergentagent.com/job_content-124/artifacts/z30m69hd_IMG_7756.png',
+      'https://customer-assets.emergentagent.com/job_content-124/artifacts/bjwc0owo_IMG_7757.png',
+      'https://customer-assets.emergentagent.com/job_content-124/artifacts/q9au3bcu_IMG_7758.png',
+    ],
   },
   {
     id: 'community-run',
@@ -46,7 +53,7 @@ const EVENTS = [
 ];
 
 const EventCard = ({ event }) => {
-  const { Icon, title, subtitle, photos } = event;
+  const { Icon, title, subtitle, photos, square } = event;
   return (
     <div className="bg-[#0a0a0a] border border-white/15 rounded-3xl p-6 md:p-8 hover:border-[#e11d2e] transition-colors duration-300">
       {/* Header */}
@@ -83,7 +90,7 @@ const EventCard = ({ event }) => {
       ) : (
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 md:gap-4">
           {photos.slice(0, 5).map((src, i) => (
-            <div key={i} className="aspect-[3/4] rounded-2xl overflow-hidden">
+            <div key={i} className={`${square ? 'aspect-square' : 'aspect-[3/4]'} rounded-2xl overflow-hidden`}>
               <img
                 src={src}
                 alt=""
