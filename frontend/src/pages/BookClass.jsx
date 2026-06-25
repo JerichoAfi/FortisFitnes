@@ -4,7 +4,7 @@ import { IMAGES, WA } from '../data/mock';
 const CLASS_CARDS = [
   {
     name: 'YOGA',
-    image: IMAGES.yoga,
+    image: 'https://i.postimg.cc/2SLJYQsS/1782377082152.png',
     desc: 'Yoga adalah kelas low impact yang berfokus pada keseimbangan antara tubuh dan pikiran melalui latihan pernafasan, fleksibilitas, mobility, dan kontrol tubuh. Yoga membantu meningkatkan kualitas postur, kelenturan, keseimbangan, serta memberikan efek relaksasi untuk menjaga kesehatan fisik dan mental.',
   },
   {
@@ -19,17 +19,17 @@ const CLASS_CARDS = [
   },
   {
     name: 'ZUMBA',
-    image: IMAGES.pilates,
+    image: 'https://i.postimg.cc/PqmRptrs/1782377297351.png',
     desc: 'Zumba adalah kelas cardio dance yang memadukan gerakan fitness dengan irama musik Latin dan internasional yang energik dan menyenangkan. Dengan gerakan yang mudah diikuti, Zumba menjadi salah satu jenis latihan yang efektif untuk membakar kalori, meningkatkan stamina, serta menjaga kebugaran tubuh dengan suasana latihan yang fun dan penuh energi.',
   },
   {
     name: 'AEROBIC',
-    image: IMAGES.yoga,
+    image: 'https://i.postimg.cc/J4v6pyGf/1782377307329.png',
     desc: 'Aerobic merupakan kelas cardio workout dengan kombinasi gerakan ritmis mengikuti musik untuk meningkatkan kesehatan jantung, stamina, koordinasi tubuh, serta membantu pembakaran kalori secara efektif. Kelas ini cocok untuk berbagai usia dan level kebugaran.',
   },
   {
     name: 'POUNDFIT',
-    image: IMAGES.battle,
+    image: 'https://i.postimg.cc/ryhYtZcM/1782377409902.png',
     desc: 'Poundfit adalah kelas cardio workout yang menggabungkan gerakan fitness dengan simulasi bermain drum menggunakan ripstix. Dengan tempo musik yang energik dan gerakan full body workout, Poundfit membantu meningkatkan endurance, koordinasi, kekuatan, serta membakar kalori dengan cara yang lebih seru dan interaktif.',
   },
   {
