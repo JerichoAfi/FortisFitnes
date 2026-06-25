@@ -29,7 +29,13 @@ const EVENTS = [
     title: 'FORTIS COMMUNITY RUN',
     subtitle: 'in collaboration with Klub Of Traps',
     Icon: Footprints,
-    photos: [IMAGES.gym1, IMAGES.gym2, IMAGES.gym3, IMAGES.battle, IMAGES.boxing],
+    square: true,
+    photos: [
+      'https://customer-assets.emergentagent.com/job_content-124/artifacts/ciesz0d0_IMG_7755.PNG',
+      'https://customer-assets.emergentagent.com/job_content-124/artifacts/93lws7kd_IMG_7754.PNG',
+      'https://customer-assets.emergentagent.com/job_content-124/artifacts/7cfwf4dy_IMG_7753.PNG',
+      'https://customer-assets.emergentagent.com/job_content-124/artifacts/ju1tdjka_1782368152230.png',
+    ],
   },
   {
     id: 'certified-instructor',
