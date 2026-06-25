@@ -10,6 +10,7 @@ const CLASS_CARDS = [
   {
     name: 'PRENATAL YOGA',
     image: 'https://i.postimg.cc/Xq4fHC5y/1782381059819.png',
+    desc: 'Prenatal Yoga adalah kelas yoga khusus untuk ibu hamil yang dirancang untuk membantu menjaga kebugaran tubuh, fleksibilitas, serta kenyamanan selama masa kehamilan. Dengan gerakan dan teknik pernafasan yang aman, kelas ini membantu mengurangi stres, meningkatkan relaksasi, serta mempersiapkan tubuh menjelang persalinan.',
   },
   {
     name: 'PILATES',
