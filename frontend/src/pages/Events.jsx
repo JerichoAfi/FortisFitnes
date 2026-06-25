@@ -17,8 +17,8 @@ const EVENTS = [
     Icon: Dumbbell,
     square: true,
     photos: [
-      'https://customer-assets.emergentagent.com/job_content-124/artifacts/o7pntx9e_IMG_2503.jpeg',
-      'https://customer-assets.emergentagent.com/job_content-124/artifacts/b3xu84l2_IMG_2507.jpeg',
+      'https://customer-assets.emergentagent.com/job_content-124/artifacts/8ikrceg7_IMG_2503.JPEG',
+      'https://customer-assets.emergentagent.com/job_content-124/artifacts/udb7iz6j_IMG_2507-2.jpeg',
       'https://customer-assets.emergentagent.com/job_content-124/artifacts/z30m69hd_IMG_7756.png',
       'https://customer-assets.emergentagent.com/job_content-124/artifacts/bjwc0owo_IMG_7757.png',
       'https://customer-assets.emergentagent.com/job_content-124/artifacts/q9au3bcu_IMG_7758.png',
