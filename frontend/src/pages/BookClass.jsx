@@ -9,8 +9,7 @@ const CLASS_CARDS = [
   },
   {
     name: 'PRENATAL YOGA',
-    image: IMAGES.yoga,
-    desc: 'Prenatal Yoga adalah kelas yoga khusus untuk ibu hamil yang dirancang untuk membantu menjaga kebugaran tubuh, fleksibilitas, serta kenyamanan selama masa kehamilan. Dengan gerakan dan teknik pernafasan yang aman, kelas ini membantu mengurangi stres, meningkatkan relaksasi, serta mempersiapkan tubuh menjelang persalinan.',
+    image: 'https://i.postimg.cc/Xq4fHC5y/1782381059819.png',
   },
   {
     name: 'PILATES',
@@ -34,27 +33,27 @@ const CLASS_CARDS = [
   },
   {
     name: 'BOXING',
-    image: IMAGES.boxing,
+    image: 'https://i.postimg.cc/DZqQPgS7/1782381222199.png',
     desc: 'Boxing adalah kelas latihan yang memadukan teknik dasar tinju dengan latihan cardio dan conditioning. Kelas ini membantu meningkatkan kecepatan, kekuatan, koordinasi, refleks, serta endurance tubuh melalui kombinasi gerakan punching, footwork, dan body movement yang intens dan dinamis.',
   },
   {
     name: 'MUAYTHAI',
-    image: IMAGES.bjj,
+    image: 'https://i.postimg.cc/d18RjBh3/1782381305689.png',
     desc: 'Muaythai merupakan kelas martial arts conditioning yang mengombinasikan teknik pukulan, tendangan, lutut, dan siku untuk melatih kekuatan, stamina, kelincahan, serta daya tahan tubuh. Selain efektif untuk kebugaran, kelas ini juga membantu meningkatkan fokus dan kepercayaan diri.',
   },
   {
     name: 'CIRCUIT TRAINING',
-    image: IMAGES.equip1,
+    image: 'https://i.postimg.cc/qq4sb3Kk/1782381376579.png',
     desc: 'Circuit Training adalah metode latihan dengan kombinasi beberapa gerakan yang dilakukan secara berurutan dalam intensitas tertentu. Kelas ini dirancang untuk meningkatkan strength, endurance, cardio fitness, serta membantu pembakaran kalori secara maksimal melalui variasi latihan full body workout.',
   },
   {
     name: 'CALISTHENICS',
-    image: IMAGES.equip2,
+    image: 'https://i.postimg.cc/fWfj3845/1782381404029.png',
     desc: 'Calisthenics adalah metode latihan yang menggunakan berat tubuh sendiri untuk membangun kekuatan, kontrol tubuh, mobility, dan keseimbangan. Kelas ini melatih berbagai gerakan fundamental hingga advanced movement seperti pull up, push up, dips, hingga static hold yang membantu meningkatkan body control dan functional strength.',
   },
   {
     name: 'KIDS BOOTCAMP',
-    image: IMAGES.equip3,
+    image: 'https://i.postimg.cc/hPCLshtg/1782381487549.png',
     desc: 'Kelas fun & aktif khusus anak-anak yang dirancang untuk membantu meningkatkan kekuatan, koordinasi, kelincahan, keseimbangan, dan kepercayaan diri melalui berbagai aktivitas olahraga yang seru dan interaktif. Dipandu dengan pendekatan yang aman dan menyenangkan, Kids Bootcamp membantu anak tetap aktif, sehat, serta membangun kebiasaan hidup sehat sejak dini.',
   },
 ];
