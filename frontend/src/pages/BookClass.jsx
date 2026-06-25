@@ -14,7 +14,7 @@ const CLASS_CARDS = [
   },
   {
     name: 'PILATES',
-    image: IMAGES.pilates,
+    image: 'https://customer-assets.emergentagent.com/job_content-124/artifacts/so0ho6of_1782377170999.png',
     desc: 'Pilates adalah kelas low impact training yang berfokus pada core strength, postur tubuh, flexibility, dan body control. Dengan gerakan yang terkontrol dan teknik pernafasan yang tepat, Pilates membantu meningkatkan stabilitas tubuh, memperbaiki postur, serta mengurangi risiko cedera dalam aktivitas sehari-hari maupun latihan.',
   },
   {
