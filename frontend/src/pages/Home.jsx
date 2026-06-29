@@ -90,11 +90,16 @@ const ClassesHoverSection = () => {
 const Home = () => {
   return (
     <>
-      {/* HERO - FULL IMAGE, NO TEXT */}
+      {/* HERO - FULL FRAME VIDEO, NO TEXT */}
       <section className="relative h-screen w-full overflow-hidden">
-        <img
-          src={HERO_IMAGE}
-          alt="Fortis Fitness"
+        <video
+          src="https://customer-assets.emergentagent.com/job_content-124/artifacts/0vastvkv_fortis%20video"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+          poster={HERO_IMAGE}
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-black/70 to-transparent pointer-events-none" />
