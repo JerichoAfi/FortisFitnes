@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowUpRight } from 'lucide-react';
+import { ArrowUpRight, Volume2, VolumeX } from 'lucide-react';
 import {
   HERO_IMAGE,
   IMAGES,
@@ -87,23 +87,52 @@ const ClassesHoverSection = () => {
   );
 };
 
+const HeroVideo = () => {
+  const videoRef = useRef(null);
+  const [muted, setMuted] = useState(true);
+
+  const toggleSound = () => {
+    const v = videoRef.current;
+    if (!v) return;
+    const next = !muted;
+    v.muted = next;
+    if (!next) {
+      // user gesture allows playing with sound
+      v.play().catch(() => {});
+    }
+    setMuted(next);
+  };
+
+  return (
+    <section className="relative h-screen w-full overflow-hidden">
+      <video
+        ref={videoRef}
+        src="https://customer-assets.emergentagent.com/job_content-124/artifacts/0vastvkv_fortis%20video"
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="auto"
+        className="absolute inset-0 w-full h-full object-cover"
+      />
+      <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-black/70 to-transparent pointer-events-none" />
+
+      <button
+        onClick={toggleSound}
+        aria-label={muted ? 'Unmute video' : 'Mute video'}
+        className="absolute bottom-6 right-6 z-10 w-12 h-12 md:w-14 md:h-14 rounded-full bg-black/60 backdrop-blur-sm border border-white/30 text-white flex items-center justify-center hover:bg-[#e11d2e] hover:border-[#e11d2e] transition-all duration-300"
+      >
+        {muted ? <VolumeX size={20} /> : <Volume2 size={20} />}
+      </button>
+    </section>
+  );
+};
+
 const Home = () => {
   return (
     <>
-      {/* HERO - FULL FRAME VIDEO, NO TEXT */}
-      <section className="relative h-screen w-full overflow-hidden">
-        <video
-          src="https://customer-assets.emergentagent.com/job_content-124/artifacts/0vastvkv_fortis%20video"
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="auto"
-          poster={HERO_IMAGE}
-          className="absolute inset-0 w-full h-full object-cover"
-        />
-        <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-black/70 to-transparent pointer-events-none" />
-      </section>
+      {/* HERO - FULL FRAME VIDEO */}
+      <HeroVideo />
 
       {/* TRAIN. GROW. THRIVE. */}
       <section className="bg-black py-24 md:py-32">
