@@ -9,15 +9,15 @@ import {
 } from '../data/mock';
 
 const CLASS_HOVER_LIST = [
-  { name: 'YOGA', image: IMAGES.yoga },
-  { name: 'PILATES', image: IMAGES.pilates },
-  { name: 'ZUMBA', image: IMAGES.pilates },
-  { name: 'AEROBIC', image: IMAGES.yoga },
-  { name: 'POUNDFIT', image: IMAGES.battle },
-  { name: 'BOXING', image: IMAGES.boxing },
-  { name: 'MUAYTHAI', image: IMAGES.bjj },
-  { name: 'CIRCUIT TRAINING', image: IMAGES.equip1 },
-  { name: 'CALISTHENICS', image: IMAGES.equip2 },
+  { name: 'YOGA', image: 'https://i.postimg.cc/2SLJYQsS/1782377082152.png' },
+  { name: 'PILATES', image: 'https://customer-assets.emergentagent.com/job_content-124/artifacts/so0ho6of_1782377170999.png' },
+  { name: 'ZUMBA', image: 'https://i.postimg.cc/PqmRptrs/1782377297351.png' },
+  { name: 'AEROBIC', image: 'https://i.postimg.cc/J4v6pyGf/1782377307329.png' },
+  { name: 'POUNDFIT', image: 'https://i.postimg.cc/ryhYtZcM/1782377409902.png' },
+  { name: 'BOXING', image: 'https://i.postimg.cc/DZqQPgS7/1782381222199.png' },
+  { name: 'MUAYTHAI', image: 'https://i.postimg.cc/d18RjBh3/1782381305689.png' },
+  { name: 'CIRCUIT TRAINING', image: 'https://i.postimg.cc/qq4sb3Kk/1782381376579.png' },
+  { name: 'CALISTHENICS', image: 'https://i.postimg.cc/fWfj3845/1782381404029.png' },
 ];
 
 const ClassesHoverSection = () => {
@@ -138,7 +138,10 @@ const Home = () => {
       <section className="bg-black py-24 md:py-32">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-10 mb-20">
-            {[IMAGES.equip2, IMAGES.battle].map((src, i) => (
+            {[
+              'https://customer-assets.emergentagent.com/job_content-124/artifacts/fnt8jbcr_DSCF0204.jpg',
+              'https://customer-assets.emergentagent.com/job_content-124/artifacts/vg6snfcw_DSCF0676.JPG',
+            ].map((src, i) => (
               <div
                 key={i}
                 className="relative overflow-hidden group aspect-square"
@@ -244,7 +247,11 @@ const Home = () => {
       {/* MORE THAN JUST A GYM */}
       <section className="bg-black">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-0">
-          {[IMAGES.equip2, HERO_IMAGE, IMAGES.battle].map((src, i) => (
+          {[
+            'https://customer-assets.emergentagent.com/job_content-124/artifacts/3034qshj_IMG-20250318-WA0004.jpg',
+            'https://customer-assets.emergentagent.com/job_content-124/artifacts/n7zs0zr7_DSC07350.jpg',
+            'https://customer-assets.emergentagent.com/job_content-124/artifacts/txnu2i6s_DSC07365.jpg',
+          ].map((src, i) => (
             <div key={i} className="aspect-[4/3] overflow-hidden">
               <img
                 src={src}
