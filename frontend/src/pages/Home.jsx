@@ -300,15 +300,15 @@ const Home = () => {
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/85" />
 
-          <div className="relative z-10 h-full flex flex-col items-center justify-end pb-20 md:pb-28 text-center px-6 max-w-3xl mx-auto">
+          <div className="relative z-10 h-full flex flex-col items-center justify-end pb-8 md:pb-12 text-center px-6 max-w-2xl mx-auto">
             <h2
-              className="text-white text-5xl md:text-7xl lg:text-8xl tracking-[0.04em] mb-6"
+              className="text-white text-3xl md:text-4xl lg:text-5xl tracking-[0.04em] mb-3"
               style={{ fontFamily: "'Oswald', sans-serif", fontWeight: 500 }}
             >
               MEET OUR TRAINERS
             </h2>
             <p
-              className="text-white/85 text-base md:text-lg leading-relaxed mb-10 max-w-2xl"
+              className="text-white/85 text-sm md:text-base leading-relaxed mb-6 max-w-xl"
               style={{ fontFamily: "'Inter', sans-serif" }}
             >
               Tim pelatih Fortis Fitness hadir untuk mendampingi setiap
@@ -317,7 +317,7 @@ const Home = () => {
             </p>
             <Link
               to="/our-trainer"
-              className="inline-flex items-center justify-center bg-[#e11d2e] border border-[#e11d2e] text-white text-xs uppercase tracking-[0.25em] px-10 py-4 hover:bg-[#c81729] hover:border-[#c81729] transition-all duration-300"
+              className="inline-flex items-center justify-center bg-[#e11d2e] border border-[#e11d2e] text-white text-[11px] uppercase tracking-[0.25em] px-8 py-3 hover:bg-[#c81729] hover:border-[#c81729] transition-all duration-300"
             >
               Kenali Pelatih Kami
             </Link>
