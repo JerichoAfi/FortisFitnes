@@ -43,12 +43,12 @@ const KEPANJEN_FACILITIES = [
   {
     label: 'FASILITAS PENDUKUNG',
     desc: 'Locker, shower room, hot shower, dan musholla.',
-    image: IMAGES.gym3,
+    image: 'https://customer-assets.emergentagent.com/job_content-124/artifacts/0qemut2r_IMG-20250514-WA0016.jpg',
   },
   {
     label: 'KENYAMANAN MEMBER',
     desc: 'Free parkir, body composition scale, dan Wi-Fi.',
-    image: IMAGES.gym1,
+    image: 'https://i.postimg.cc/9QVr6M1r/DSC07318.jpg',
   },
   {
     label: 'PERSONAL TRAINING',
@@ -71,17 +71,17 @@ const GRAHA_FACILITIES = [
   {
     label: 'PREMIUM AMENITIES',
     desc: 'Hot shower and body composition scale.',
-    image: IMAGES.gym3,
+    image: 'https://customer-assets.emergentagent.com/job_content-124/artifacts/txnu2i6s_DSC07365.jpg',
   },
   {
     label: 'MEMBER COMFORT',
     desc: 'Free water refill and free Wi-Fi.',
-    image: IMAGES.equip3,
+    image: 'https://customer-assets.emergentagent.com/job_content-124/artifacts/m96do02j_IMG-20250514-WA0014.jpg',
   },
   {
     label: 'FREE PARKING',
     desc: 'Convenient and easy-access parking area.',
-    image: IMAGES.bjj,
+    image: 'https://i.postimg.cc/9QVr6M1r/DSC07318.jpg',
   },
   {
     label: 'CLEAN & HYGIENIC ENVIRONMENT',

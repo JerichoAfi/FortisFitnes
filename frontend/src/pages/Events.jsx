@@ -8,7 +8,11 @@ const EVENTS = [
     title: 'SPECIAL CLASS',
     subtitle: 'Independence Day, Fortis Anniversary, etc',
     Icon: Sparkles,
-    photos: [IMAGES.yoga, IMAGES.pilates, IMAGES.boxing, IMAGES.bjj, IMAGES.equip3],
+    photos: [
+      'https://i.postimg.cc/J4v6pyGf/1782377307329.png',
+      'https://i.postimg.cc/Vv9dvrFv/IMG-2620.jpg',
+      'https://i.postimg.cc/63v7s12g/IMG-1868.jpg',
+    ],
   },
   {
     id: 'community-games',
@@ -42,7 +46,10 @@ const EVENTS = [
     title: 'CERTIFIED FITNESS INSTRUCTOR',
     subtitle: 'by Prima Fit Academy',
     Icon: Award,
-    photos: [IMAGES.trainer1, IMAGES.bjj, IMAGES.equip1, IMAGES.boxing, IMAGES.trainer2],
+    photos: [
+      'https://i.postimg.cc/5N1XGgxn/IMG-5554.jpg',
+      'https://i.postimg.cc/9f4PMbwf/IMG-5475.jpg',
+    ],
   },
   {
     id: 'serenity-flow',
@@ -82,6 +89,32 @@ const EventCard = ({ event }) => {
       {/* Photo collage — square aspect for 4-photo events, portrait 3:4 for 5-photo events */}
       {photos.length === 4 ? (
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
+          {photos.map((src, i) => (
+            <div key={i} className="aspect-square rounded-2xl overflow-hidden">
+              <img
+                src={src}
+                alt=""
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
+          ))}
+        </div>
+      ) : photos.length === 3 ? (
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-4">
+          {photos.map((src, i) => (
+            <div key={i} className="aspect-square rounded-2xl overflow-hidden">
+              <img
+                src={src}
+                alt=""
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
+          ))}
+        </div>
+      ) : photos.length === 2 ? (
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
           {photos.map((src, i) => (
             <div key={i} className="aspect-square rounded-2xl overflow-hidden">
               <img

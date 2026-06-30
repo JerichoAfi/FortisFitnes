@@ -9,7 +9,7 @@ const LOCATION_DATA = [
     tagline: 'The First Premium Gym in Kepanjen.',
     description:
       'Fortis Fitness menghadirkan pengalaman latihan yang nyaman, modern, dan berkualitas melalui fasilitas lengkap, 50+ imported gym equipment, unlimited gym & group classes, serta komunitas yang positif dan suportif. Tempat untuk berlatih, berkembang, dan menikmati setiap proses menuju versi terbaikmu.',
-    image: IMAGES.gym1,
+    image: 'https://customer-assets.emergentagent.com/job_content-124/artifacts/3lesm2q1_DSC07390-2.JPG',
     address: 'Jl. Trunojoyo No. 50, Kepanjen, Kab. Malang',
     phoneLink: 'https://wa.me/6282333327332',
     phoneLabel: '0823-3332-7332 (Call / WhatsApp)',
@@ -29,7 +29,7 @@ const LOCATION_DATA = [
     description:
       'Fortis Fitness Graha Kencana menghadirkan pengalaman latihan yang lebih privat, nyaman, dan fokus melalui konsep private gym by reservation only. Dengan imported gym equipment, fasilitas premium, dan kapasitas hingga 10 orang per sesi, kamu dapat menikmati pengalaman fitness yang lebih personal bersama circle kamu sendiri.',
     highlight: 'Private. Comfortable. By Reservation Only.',
-    image: IMAGES.gym2,
+    image: 'https://customer-assets.emergentagent.com/job_content-124/artifacts/n46fegf6_DSC07399-2.JPG',
     address: 'Jl. Graha Kencana Selatan VI No. 5, Blimbing, Kota Malang',
     phoneLink: 'https://wa.me/6281239201201',
     phoneLabel: '0812-3920-1201 (Call / WhatsApp)',
@@ -49,7 +49,7 @@ const Locations = () => {
       {/* HERO - FULL FRAME */}
       <section className="relative h-screen min-h-[700px] w-full overflow-hidden flex items-center justify-center">
         <img
-          src={IMAGES.gym2}
+          src="https://customer-assets.emergentagent.com/job_content-124/artifacts/txnu2i6s_DSC07365.jpg"
           alt="Locations"
           className="absolute inset-0 w-full h-full object-cover"
         />
@@ -180,7 +180,7 @@ const Locations = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-16 items-center">
             <div className="relative overflow-hidden aspect-[4/5] md:aspect-[5/6] rounded-2xl">
               <img
-                src={IMAGES.gym3}
+                src="https://customer-assets.emergentagent.com/job_content-124/artifacts/32j7lr14_IMG-20250514-WA0013.jpg"
                 alt="Turen"
                 className="absolute inset-0 w-full h-full object-cover"
                 loading="lazy"
