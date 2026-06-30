@@ -300,7 +300,7 @@ const Home = () => {
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/85" />
 
-          <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-6 max-w-3xl mx-auto">
+          <div className="relative z-10 h-full flex flex-col items-center justify-end pb-20 md:pb-28 text-center px-6 max-w-3xl mx-auto">
             <h2
               className="text-white text-5xl md:text-7xl lg:text-8xl tracking-[0.04em] mb-6"
               style={{ fontFamily: "'Oswald', sans-serif", fontWeight: 500 }}
