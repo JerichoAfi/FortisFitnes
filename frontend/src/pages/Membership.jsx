@@ -33,12 +33,12 @@ const KEPANJEN_FACILITIES = [
   {
     label: 'AREA LATIHAN LENGKAP',
     desc: '50+ alat import untuk strength, functional, cardio, dan calisthenics.',
-    image: IMAGES.equip1,
+    image: 'https://customer-assets.emergentagent.com/job_content-124/artifacts/3034qshj_IMG-20250318-WA0004.jpg',
   },
   {
     label: 'UNLIMITED GROUP CLASSES',
     desc: 'Akses berbagai kelas tanpa batas selama membership aktif.',
-    image: IMAGES.yoga,
+    image: 'https://i.postimg.cc/ryhYtZcM/1782377409902.png',
   },
   {
     label: 'FASILITAS PENDUKUNG',
@@ -53,7 +53,7 @@ const KEPANJEN_FACILITIES = [
   {
     label: 'PERSONAL TRAINING',
     desc: 'Pendampingan profesional sesuai kebutuhan dan goals latihanmu.',
-    image: IMAGES.trainer1,
+    image: 'https://customer-assets.emergentagent.com/job_content-124/artifacts/njfwnqgy_2026-06-30%2012.00.03.jpg',
   },
 ];
 
@@ -61,12 +61,12 @@ const GRAHA_FACILITIES = [
   {
     label: 'PRIVATE GYM EXPERIENCE',
     desc: 'Private, comfortable, and by reservation only.',
-    image: IMAGES.gym2,
+    image: 'https://customer-assets.emergentagent.com/job_content-124/artifacts/fnt8jbcr_DSCF0204.jpg',
   },
   {
     label: 'IMPORTED GYM EQUIPMENT',
     desc: 'Premium equipment for strength, cardio, and functional training.',
-    image: IMAGES.equip2,
+    image: 'https://customer-assets.emergentagent.com/job_content-124/artifacts/vg6snfcw_DSCF0676.JPG',
   },
   {
     label: 'PREMIUM AMENITIES',
@@ -86,7 +86,7 @@ const GRAHA_FACILITIES = [
   {
     label: 'CLEAN & HYGIENIC ENVIRONMENT',
     desc: 'Cleaning wipes and disinfectant available in every session.',
-    image: IMAGES.pilates,
+    image: 'https://customer-assets.emergentagent.com/job_content-124/artifacts/n7zs0zr7_DSC07350.jpg',
   },
 ];
 
@@ -180,7 +180,7 @@ const Membership = () => {
       {/* HERO - FULL FRAME IMAGE WITH OVERLAY TEXT */}
       <section className="relative h-screen min-h-[700px] w-full overflow-hidden flex items-center justify-center">
         <img
-          src={IMAGES.gym1}
+          src="https://customer-assets.emergentagent.com/job_content-124/artifacts/6hab815y_2026-06-30%2012.00.07.jpg"
           alt="Membership"
           className="absolute inset-0 w-full h-full object-cover"
         />
@@ -279,14 +279,6 @@ const Membership = () => {
                 key={m.id}
                 className="bg-[#1c1c1c] rounded-2xl border border-white/10 hover:border-white/40 transition-colors duration-300 overflow-hidden flex flex-col"
               >
-                <div className="aspect-[16/10] overflow-hidden">
-                  <img
-                    src={m.image}
-                    alt={m.name}
-                    className="w-full h-full object-cover grayscale hover:grayscale-0 hover:scale-105 transition-all duration-700"
-                    loading="lazy"
-                  />
-                </div>
                 <div className="p-7 flex flex-col flex-1 text-center">
                   <h3
                     className="text-white text-xl md:text-2xl tracking-[0.04em] mb-2"

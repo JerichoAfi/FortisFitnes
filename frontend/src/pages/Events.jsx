@@ -117,7 +117,7 @@ const Events = () => {
       {/* HERO - FULL FRAME, ONLY EVENTS TITLE */}
       <section className="relative h-screen min-h-[700px] w-full overflow-hidden flex items-center justify-center">
         <img
-          src={IMAGES.battle}
+          src="https://customer-assets.emergentagent.com/job_content-124/artifacts/n7zs0zr7_DSC07350.jpg"
           alt="Events"
           className="absolute inset-0 w-full h-full object-cover"
         />

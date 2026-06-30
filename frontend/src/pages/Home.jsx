@@ -296,7 +296,7 @@ const Home = () => {
         <div className="relative h-[80vh] min-h-[600px] w-full">
           <div
             className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: `url(${IMAGES.trainer1})` }}
+            style={{ backgroundImage: `url(https://customer-assets.emergentagent.com/job_content-124/artifacts/0f2jmqd9_2026-06-30%2012.00.05.jpg)` }}
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/85" />
 
