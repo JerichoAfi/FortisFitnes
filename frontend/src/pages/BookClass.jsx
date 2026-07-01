@@ -24,7 +24,7 @@ const CLASS_CARDS = [
   },
   {
     name: 'AEROBIC',
-    image: 'https://i.postimg.cc/J4v6pyGf/1782377307329.png',
+    image: 'https://customer-assets.emergentagent.com/job_content-124/artifacts/kmyaj43i_aerobic.png',
     desc: 'Aerobic merupakan kelas cardio workout dengan kombinasi gerakan ritmis mengikuti musik untuk meningkatkan kesehatan jantung, stamina, koordinasi tubuh, serta membantu pembakaran kalori secara efektif. Kelas ini cocok untuk berbagai usia dan level kebugaran.',
   },
   {
@@ -34,7 +34,7 @@ const CLASS_CARDS = [
   },
   {
     name: 'BOXING',
-    image: 'https://i.postimg.cc/DZqQPgS7/1782381222199.png',
+    image: 'https://customer-assets.emergentagent.com/job_content-124/artifacts/tfj78sb0_boxing.jpeg',
     desc: 'Boxing adalah kelas latihan yang memadukan teknik dasar tinju dengan latihan cardio dan conditioning. Kelas ini membantu meningkatkan kecepatan, kekuatan, koordinasi, refleks, serta endurance tubuh melalui kombinasi gerakan punching, footwork, dan body movement yang intens dan dinamis.',
   },
   {
@@ -44,17 +44,17 @@ const CLASS_CARDS = [
   },
   {
     name: 'CIRCUIT TRAINING',
-    image: 'https://i.postimg.cc/qq4sb3Kk/1782381376579.png',
+    image: 'https://customer-assets.emergentagent.com/job_content-124/artifacts/8dkbdewg_circuit%20training.jpeg',
     desc: 'Circuit Training adalah metode latihan dengan kombinasi beberapa gerakan yang dilakukan secara berurutan dalam intensitas tertentu. Kelas ini dirancang untuk meningkatkan strength, endurance, cardio fitness, serta membantu pembakaran kalori secara maksimal melalui variasi latihan full body workout.',
   },
   {
     name: 'CALISTHENICS',
-    image: 'https://i.postimg.cc/fWfj3845/1782381404029.png',
+    image: 'https://customer-assets.emergentagent.com/job_content-124/artifacts/4hwwbi9p_CALISTHENICS.jpeg',
     desc: 'Calisthenics adalah metode latihan yang menggunakan berat tubuh sendiri untuk membangun kekuatan, kontrol tubuh, mobility, dan keseimbangan. Kelas ini melatih berbagai gerakan fundamental hingga advanced movement seperti pull up, push up, dips, hingga static hold yang membantu meningkatkan body control dan functional strength.',
   },
   {
     name: 'KIDS BOOTCAMP',
-    image: 'https://i.postimg.cc/hPCLshtg/1782381487549.png',
+    image: 'https://customer-assets.emergentagent.com/job_content-124/artifacts/fwxkvdrk_kids%20bootcamp.jpeg',
     desc: 'Kelas fun & aktif khusus anak-anak yang dirancang untuk membantu meningkatkan kekuatan, koordinasi, kelincahan, keseimbangan, dan kepercayaan diri melalui berbagai aktivitas olahraga yang seru dan interaktif. Dipandu dengan pendekatan yang aman dan menyenangkan, Kids Bootcamp membantu anak tetap aktif, sehat, serta membangun kebiasaan hidup sehat sejak dini.',
   },
 ];
