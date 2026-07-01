@@ -38,7 +38,7 @@ const KEPANJEN_FACILITIES = [
   {
     label: 'UNLIMITED GROUP CLASSES',
     desc: 'Akses berbagai kelas tanpa batas selama membership aktif.',
-    image: 'https://i.postimg.cc/ryhYtZcM/1782377409902.png',
+    image: 'https://customer-assets.emergentagent.com/job_content-124/artifacts/a4n5kxug_poundfit.png',
   },
   {
     label: 'FASILITAS PENDUKUNG',

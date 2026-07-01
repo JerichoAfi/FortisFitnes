@@ -4,12 +4,12 @@ import { IMAGES, WA } from '../data/mock';
 const CLASS_CARDS = [
   {
     name: 'YOGA',
-    image: 'https://i.postimg.cc/2SLJYQsS/1782377082152.png',
+    image: 'https://customer-assets.emergentagent.com/job_content-124/artifacts/orcbu83h_yoga.png',
     desc: 'Yoga adalah kelas low impact yang berfokus pada keseimbangan antara tubuh dan pikiran melalui latihan pernafasan, fleksibilitas, mobility, dan kontrol tubuh. Yoga membantu meningkatkan kualitas postur, kelenturan, keseimbangan, serta memberikan efek relaksasi untuk menjaga kesehatan fisik dan mental.',
   },
   {
     name: 'PRENATAL YOGA',
-    image: 'https://i.postimg.cc/Xq4fHC5y/1782381059819.png',
+    image: 'https://customer-assets.emergentagent.com/job_content-124/artifacts/gcl5mbcy_prenatal%20yoga.jpeg',
     desc: 'Prenatal Yoga adalah kelas yoga khusus untuk ibu hamil yang dirancang untuk membantu menjaga kebugaran tubuh, fleksibilitas, serta kenyamanan selama masa kehamilan. Dengan gerakan dan teknik pernafasan yang aman, kelas ini membantu mengurangi stres, meningkatkan relaksasi, serta mempersiapkan tubuh menjelang persalinan.',
   },
   {
@@ -19,7 +19,7 @@ const CLASS_CARDS = [
   },
   {
     name: 'ZUMBA',
-    image: 'https://i.postimg.cc/PqmRptrs/1782377297351.png',
+    image: 'https://customer-assets.emergentagent.com/job_content-124/artifacts/b6io4slp_zumba.png',
     desc: 'Zumba adalah kelas cardio dance yang memadukan gerakan fitness dengan irama musik Latin dan internasional yang energik dan menyenangkan. Dengan gerakan yang mudah diikuti, Zumba menjadi salah satu jenis latihan yang efektif untuk membakar kalori, meningkatkan stamina, serta menjaga kebugaran tubuh dengan suasana latihan yang fun dan penuh energi.',
   },
   {
@@ -29,7 +29,7 @@ const CLASS_CARDS = [
   },
   {
     name: 'POUNDFIT',
-    image: 'https://i.postimg.cc/ryhYtZcM/1782377409902.png',
+    image: 'https://customer-assets.emergentagent.com/job_content-124/artifacts/a4n5kxug_poundfit.png',
     desc: 'Poundfit adalah kelas cardio workout yang menggabungkan gerakan fitness dengan simulasi bermain drum menggunakan ripstix. Dengan tempo musik yang energik dan gerakan full body workout, Poundfit membantu meningkatkan endurance, koordinasi, kekuatan, serta membakar kalori dengan cara yang lebih seru dan interaktif.',
   },
   {
@@ -39,7 +39,7 @@ const CLASS_CARDS = [
   },
   {
     name: 'MUAYTHAI',
-    image: 'https://i.postimg.cc/d18RjBh3/1782381305689.png',
+    image: 'https://customer-assets.emergentagent.com/job_content-124/artifacts/1rrvdtm2_muaythai.jpeg',
     desc: 'Muaythai merupakan kelas martial arts conditioning yang mengombinasikan teknik pukulan, tendangan, lutut, dan siku untuk melatih kekuatan, stamina, kelincahan, serta daya tahan tubuh. Selain efektif untuk kebugaran, kelas ini juga membantu meningkatkan fokus dan kepercayaan diri.',
   },
   {

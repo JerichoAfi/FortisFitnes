@@ -9,13 +9,13 @@ import {
 } from '../data/mock';
 
 const CLASS_HOVER_LIST = [
-  { name: 'YOGA', image: 'https://i.postimg.cc/2SLJYQsS/1782377082152.png' },
+  { name: 'YOGA', image: 'https://customer-assets.emergentagent.com/job_content-124/artifacts/orcbu83h_yoga.png' },
   { name: 'PILATES', image: 'https://customer-assets.emergentagent.com/job_content-124/artifacts/so0ho6of_1782377170999.png' },
-  { name: 'ZUMBA', image: 'https://i.postimg.cc/PqmRptrs/1782377297351.png' },
+  { name: 'ZUMBA', image: 'https://customer-assets.emergentagent.com/job_content-124/artifacts/b6io4slp_zumba.png' },
   { name: 'AEROBIC', image: 'https://i.postimg.cc/J4v6pyGf/1782377307329.png' },
-  { name: 'POUNDFIT', image: 'https://i.postimg.cc/ryhYtZcM/1782377409902.png' },
+  { name: 'POUNDFIT', image: 'https://customer-assets.emergentagent.com/job_content-124/artifacts/a4n5kxug_poundfit.png' },
   { name: 'BOXING', image: 'https://i.postimg.cc/DZqQPgS7/1782381222199.png' },
-  { name: 'MUAYTHAI', image: 'https://i.postimg.cc/d18RjBh3/1782381305689.png' },
+  { name: 'MUAYTHAI', image: 'https://customer-assets.emergentagent.com/job_content-124/artifacts/1rrvdtm2_muaythai.jpeg' },
   { name: 'CIRCUIT TRAINING', image: 'https://i.postimg.cc/qq4sb3Kk/1782381376579.png' },
   { name: 'CALISTHENICS', image: 'https://i.postimg.cc/fWfj3845/1782381404029.png' },
 ];
