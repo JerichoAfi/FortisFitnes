@@ -45,7 +45,7 @@ const TrainerCard = ({ t }) => {
   const isPlaceholder = !t.image;
   return (
     <div className="group relative overflow-hidden rounded-2xl bg-black border border-white/10 hover:border-[#e11d2e] transition-colors duration-300">
-      <div className="relative aspect-square bg-black">
+      <div className="relative aspect-[9/16] bg-black">
         {isPlaceholder ? (
           <div className="absolute inset-0 flex flex-col items-center justify-center text-white/30 gap-3">
             <User size={64} strokeWidth={1} />
@@ -55,7 +55,7 @@ const TrainerCard = ({ t }) => {
           <img
             src={t.image}
             alt={t.name}
-            className="absolute inset-0 w-full h-full object-contain"
+            className="absolute inset-0 w-full h-full object-cover"
             loading="lazy"
           />
         )}
