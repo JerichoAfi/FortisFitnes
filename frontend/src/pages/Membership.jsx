@@ -38,7 +38,7 @@ const KEPANJEN_FACILITIES = [
   {
     label: 'UNLIMITED GROUP CLASSES',
     desc: 'Akses berbagai kelas tanpa batas selama membership aktif.',
-    image: 'https://customer-assets.emergentagent.com/job_content-124/artifacts/a4n5kxug_poundfit.png',
+    image: 'https://customer-assets.emergentagent.com/job_content-124/artifacts/5hrzjdyq_Unlimited%20group%20class.png',
   },
   {
     label: 'FASILITAS PENDUKUNG',
@@ -48,12 +48,12 @@ const KEPANJEN_FACILITIES = [
   {
     label: 'KENYAMANAN MEMBER',
     desc: 'Free parkir, body composition scale, dan Wi-Fi.',
-    image: 'https://customer-assets.emergentagent.com/job_content-124/artifacts/rowf3flx_DSC07318-3.JPG',
+    image: 'https://customer-assets.emergentagent.com/job_content-124/artifacts/1hrxyyya_Facility.png',
   },
   {
     label: 'PERSONAL TRAINING',
     desc: 'Pendampingan profesional sesuai kebutuhan dan goals latihanmu.',
-    image: 'https://customer-assets.emergentagent.com/job_content-124/artifacts/njfwnqgy_2026-06-30%2012.00.03.jpg',
+    image: 'https://customer-assets.emergentagent.com/job_content-124/artifacts/9j4o4zk6_PT.png',
   },
 ];
 
@@ -180,22 +180,16 @@ const Membership = () => {
       {/* HERO - FULL FRAME IMAGE WITH OVERLAY TEXT */}
       <section className="relative h-screen min-h-[700px] w-full overflow-hidden flex items-center justify-center">
         <img
-          src="https://customer-assets.emergentagent.com/job_content-124/artifacts/6hab815y_2026-06-30%2012.00.07.jpg"
+          src="https://customer-assets.emergentagent.com/job_content-124/artifacts/omx79jms_Header%20membership.png"
           alt="Membership"
           className="absolute inset-0 w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/45 to-black/85" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/80" />
 
         <div className="relative z-10 text-center px-6 max-w-4xl">
-          <p
-            className="text-[#e11d2e] text-[11px] md:text-xs tracking-[0.4em] uppercase mb-6"
-            style={{ fontFamily: "'Inter', sans-serif", fontWeight: 600 }}
-          >
-            Membership
-          </p>
           <h1
-            className="text-white text-5xl md:text-7xl lg:text-8xl tracking-[0.03em] leading-[1.02] mb-8"
-            style={{ fontFamily: "'Oswald', sans-serif", fontWeight: 600 }}
+            className="text-[#e11d2e] text-5xl md:text-7xl lg:text-8xl tracking-[0.03em] leading-[1.02] mb-8"
+            style={{ fontFamily: "'Oswald', sans-serif", fontWeight: 700 }}
           >
             MORE THAN
             <br />

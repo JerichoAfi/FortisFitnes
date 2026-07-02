@@ -103,14 +103,8 @@ const OurTrainer = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/40 to-black/90" />
 
         <div className="relative z-10 text-center px-6 max-w-4xl">
-          <p
-            className="text-[#e11d2e] text-[11px] md:text-xs tracking-[0.4em] uppercase mb-6"
-            style={{ fontFamily: "'Inter', sans-serif", fontWeight: 600 }}
-          >
-            Our Trainer
-          </p>
           <h1
-            className="text-white text-5xl md:text-7xl lg:text-8xl tracking-[0.03em] leading-[1.02] mb-7"
+            className="text-[#e11d2e] text-5xl md:text-7xl lg:text-8xl tracking-[0.03em] leading-[1.02] mb-7"
             style={{ fontFamily: "'Oswald', sans-serif", fontWeight: 700 }}
           >
             OUR TEAM

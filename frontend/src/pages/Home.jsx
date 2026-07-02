@@ -137,26 +137,6 @@ const Home = () => {
       {/* TRAIN. GROW. THRIVE. */}
       <section className="bg-black py-24 md:py-32">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-10 mb-20">
-            {[
-              'https://customer-assets.emergentagent.com/job_content-124/artifacts/fnt8jbcr_DSCF0204.jpg',
-              'https://customer-assets.emergentagent.com/job_content-124/artifacts/vg6snfcw_DSCF0676.JPG',
-            ].map((src, i) => (
-              <div
-                key={i}
-                className="relative overflow-hidden group aspect-square"
-              >
-                <img
-                  src={src}
-                  alt="Fortis Fitness"
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                  loading="lazy"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
-              </div>
-            ))}
-          </div>
-
           <div className="text-center max-w-4xl mx-auto">
             <h2
               className="text-white text-4xl md:text-6xl lg:text-7xl tracking-[0.04em] leading-tight mb-8"
@@ -246,23 +226,6 @@ const Home = () => {
 
       {/* MORE THAN JUST A GYM */}
       <section className="bg-black">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-0">
-          {[
-            'https://customer-assets.emergentagent.com/job_content-124/artifacts/3034qshj_IMG-20250318-WA0004.jpg',
-            'https://customer-assets.emergentagent.com/job_content-124/artifacts/n7zs0zr7_DSC07350.jpg',
-            'https://customer-assets.emergentagent.com/job_content-124/artifacts/txnu2i6s_DSC07365.jpg',
-          ].map((src, i) => (
-            <div key={i} className="aspect-[4/3] overflow-hidden">
-              <img
-                src={src}
-                alt="Fortis Fitness"
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
-                loading="lazy"
-              />
-            </div>
-          ))}
-        </div>
-
         <div className="max-w-3xl mx-auto text-center px-6 py-24 md:py-32">
           <h2
             className="text-white text-4xl md:text-6xl lg:text-7xl tracking-[0.04em] mb-8"

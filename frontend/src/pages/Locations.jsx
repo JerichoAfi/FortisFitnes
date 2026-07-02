@@ -56,14 +56,8 @@ const Locations = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-black/40 to-black/85" />
 
         <div className="relative z-10 text-center px-6 max-w-4xl">
-          <p
-            className="text-[#e11d2e] text-[11px] md:text-xs tracking-[0.4em] uppercase mb-6"
-            style={{ fontFamily: "'Inter', sans-serif", fontWeight: 600 }}
-          >
-            Locations
-          </p>
           <h1
-            className="text-white text-6xl md:text-8xl lg:text-9xl tracking-[0.02em] leading-[0.95]"
+            className="text-[#e11d2e] text-6xl md:text-8xl lg:text-9xl tracking-[0.02em] leading-[0.95]"
             style={{ fontFamily: "'Oswald', sans-serif", fontWeight: 700 }}
           >
             LOCATIONS

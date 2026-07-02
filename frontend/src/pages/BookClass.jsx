@@ -141,24 +141,18 @@ const BookClass = () => {
   return (
     <>
       {/* HERO - FULL FRAME IMAGE WITH OVERLAY TEXT */}
-      <section className="relative h-screen min-h-[700px] w-full overflow-hidden flex items-center justify-center">
+      <section className="relative h-screen min-h-[700px] w-full overflow-hidden flex items-end justify-center pb-16 md:pb-20">
         <img
-          src="https://customer-assets.emergentagent.com/job_content-124/artifacts/3034qshj_IMG-20250318-WA0004.jpg"
+          src="https://customer-assets.emergentagent.com/job_content-124/artifacts/5cjayorm_Header%20book%20a%20class.png"
           alt="Fortis Classes"
           className="absolute inset-0 w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/45 to-black/85" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/80" />
 
         <div className="relative z-10 text-center px-6 max-w-4xl">
-          <p
-            className="text-[#e11d2e] text-[11px] md:text-xs tracking-[0.4em] uppercase mb-6"
-            style={{ fontFamily: "'Inter', sans-serif", fontWeight: 600 }}
-          >
-            Book a Class
-          </p>
           <h1
-            className="text-white text-5xl md:text-7xl lg:text-8xl tracking-[0.03em] leading-[1.02]"
-            style={{ fontFamily: "'Oswald', sans-serif", fontWeight: 600 }}
+            className="text-[#e11d2e] text-5xl md:text-7xl lg:text-8xl tracking-[0.03em] leading-[1.02]"
+            style={{ fontFamily: "'Oswald', sans-serif", fontWeight: 700 }}
           >
             FORTIS CLASSES
           </h1>
