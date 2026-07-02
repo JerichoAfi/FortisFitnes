@@ -9,9 +9,8 @@ const EVENTS = [
     subtitle: 'Independence Day, Fortis Anniversary, etc',
     Icon: Sparkles,
     photos: [
-      'https://i.postimg.cc/J4v6pyGf/1782377307329.png',
-      'https://i.postimg.cc/Vv9dvrFv/IMG-2620.jpg',
-      'https://i.postimg.cc/63v7s12g/IMG-1868.jpg',
+      'https://customer-assets.emergentagent.com/job_content-124/artifacts/cbw3q0m8_SPECIAL%20CLASS.jpeg',
+      'https://customer-assets.emergentagent.com/job_content-124/artifacts/5ztacu6u_SPECIAL%20CLASS1.jpeg',
     ],
   },
   {
@@ -47,8 +46,9 @@ const EVENTS = [
     subtitle: 'by Prima Fit Academy',
     Icon: Award,
     photos: [
-      'https://i.postimg.cc/5N1XGgxn/IMG-5554.jpg',
-      'https://i.postimg.cc/9f4PMbwf/IMG-5475.jpg',
+      'https://customer-assets.emergentagent.com/job_content-124/artifacts/toa3efpw_CERTIFIED%20FITNESS%20INSTRUCTOR.jpeg',
+      'https://customer-assets.emergentagent.com/job_content-124/artifacts/zyx7qdcr_CERTIFIED%20FITNESS%20INSTRUCTOR1.jpeg',
+      'https://customer-assets.emergentagent.com/job_content-124/artifacts/3e8obzxj_CERTIFIED%20FITNESS%20INSTRUCTOR2.jpeg',
     ],
   },
   {
