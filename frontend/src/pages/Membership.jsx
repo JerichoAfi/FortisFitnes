@@ -48,7 +48,7 @@ const KEPANJEN_FACILITIES = [
   {
     label: 'KENYAMANAN MEMBER',
     desc: 'Free parkir, body composition scale, dan Wi-Fi.',
-    image: 'https://i.postimg.cc/9QVr6M1r/DSC07318.jpg',
+    image: 'https://customer-assets.emergentagent.com/job_content-124/artifacts/rowf3flx_DSC07318-3.JPG',
   },
   {
     label: 'PERSONAL TRAINING',
