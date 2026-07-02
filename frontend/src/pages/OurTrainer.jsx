@@ -91,14 +91,13 @@ const OurTrainer = () => {
       {/* HERO - FULL FRAME WITH CAROUSEL */}
       <section className="relative h-screen min-h-[700px] w-full overflow-hidden flex items-end justify-center pb-24 md:pb-32">
         {[
-          'https://customer-assets.emergentagent.com/job_content-124/artifacts/6hab815y_2026-06-30%2012.00.07.jpg',
-          'https://customer-assets.emergentagent.com/job_content-124/artifacts/njfwnqgy_2026-06-30%2012.00.03.jpg',
+          'https://customer-assets.emergentagent.com/job_content-124/artifacts/v7geabvx_Header%20PT.png',
         ].map((src, i) => (
           <img
             key={i}
             src={src}
             alt="Our Team"
-            className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-[1500ms] ease-in-out ${i === slide ? 'opacity-100' : 'opacity-0'}`}
+            className="absolute inset-0 w-full h-full object-cover"
           />
         ))}
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/40 to-black/90" />

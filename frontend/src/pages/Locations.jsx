@@ -29,7 +29,7 @@ const LOCATION_DATA = [
     description:
       'Fortis Fitness Graha Kencana menghadirkan pengalaman latihan yang lebih privat, nyaman, dan fokus melalui konsep private gym by reservation only. Dengan imported gym equipment, fasilitas premium, dan kapasitas hingga 10 orang per sesi, kamu dapat menikmati pengalaman fitness yang lebih personal bersama circle kamu sendiri.',
     highlight: 'Private. Comfortable. By Reservation Only.',
-    image: 'https://customer-assets.emergentagent.com/job_content-124/artifacts/n46fegf6_DSC07399-2.JPG',
+    image: 'https://customer-assets.emergentagent.com/job_content-124/artifacts/udd33zwx_lokasi%20graha%20kencana.png',
     address: 'Jl. Graha Kencana Selatan VI No. 5, Blimbing, Kota Malang',
     phoneLink: 'https://wa.me/6281239201201',
     phoneLabel: '0812-3920-1201 (Call / WhatsApp)',
@@ -49,7 +49,7 @@ const Locations = () => {
       {/* HERO - FULL FRAME */}
       <section className="relative h-screen min-h-[700px] w-full overflow-hidden flex items-center justify-center">
         <img
-          src="https://customer-assets.emergentagent.com/job_content-124/artifacts/txnu2i6s_DSC07365.jpg"
+          src="https://customer-assets.emergentagent.com/job_content-124/artifacts/t7csmpct_Header%20location.png"
           alt="Locations"
           className="absolute inset-0 w-full h-full object-cover"
         />
@@ -180,25 +180,11 @@ const Locations = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-16 items-center">
             <div className="relative overflow-hidden aspect-[4/5] md:aspect-[5/6] rounded-2xl">
               <img
-                src="https://customer-assets.emergentagent.com/job_content-124/artifacts/32j7lr14_IMG-20250514-WA0013.jpg"
+                src="https://customer-assets.emergentagent.com/job_content-124/artifacts/1xvhcs7f_lokasi%20turen-2.png"
                 alt="Turen"
                 className="absolute inset-0 w-full h-full object-cover"
                 loading="lazy"
               />
-              <div className="absolute inset-0 bg-black/70" />
-              <div className="absolute inset-0 flex items-center justify-center text-center px-6">
-                <div>
-                  <p className="text-white/70 text-[11px] tracking-[0.4em] uppercase mb-4">
-                    Opening Soon
-                  </p>
-                  <p
-                    className="text-white text-4xl md:text-5xl tracking-[0.15em]"
-                    style={{ fontFamily: "'Oswald', sans-serif", fontWeight: 700 }}
-                  >
-                    COMING SOON
-                  </p>
-                </div>
-              </div>
             </div>
 
             <div>
