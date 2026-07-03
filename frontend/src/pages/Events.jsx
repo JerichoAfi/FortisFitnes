@@ -158,7 +158,7 @@ const Events = () => {
 
         <div className="relative z-10 text-center px-6">
           <h1
-            className="text-[#e11d2e] text-7xl md:text-9xl lg:text-[180px] tracking-[0.02em] leading-[0.95]"
+            className="text-white text-7xl md:text-9xl lg:text-[180px] tracking-[0.02em] leading-[0.95]"
             style={{ fontFamily: "'Oswald', sans-serif", fontWeight: 700 }}
           >
             EVENTS

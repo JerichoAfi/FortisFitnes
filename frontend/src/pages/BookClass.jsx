@@ -141,7 +141,7 @@ const BookClass = () => {
   return (
     <>
       {/* HERO - FULL FRAME IMAGE WITH OVERLAY TEXT */}
-      <section className="relative h-screen min-h-[700px] w-full overflow-hidden flex items-end justify-center pb-16 md:pb-20">
+      <section className="relative h-screen min-h-[700px] w-full overflow-hidden flex items-end justify-center pb-40 md:pb-56">
         <img
           src="https://customer-assets.emergentagent.com/job_content-124/artifacts/5cjayorm_Header%20book%20a%20class.png"
           alt="Fortis Classes"
@@ -151,7 +151,7 @@ const BookClass = () => {
 
         <div className="relative z-10 text-center px-6 max-w-4xl">
           <h1
-            className="text-[#e11d2e] text-5xl md:text-7xl lg:text-8xl tracking-[0.03em] leading-[1.02]"
+            className="text-white text-5xl md:text-7xl lg:text-8xl tracking-[0.03em] leading-[1.02]"
             style={{ fontFamily: "'Oswald', sans-serif", fontWeight: 700 }}
           >
             FORTIS CLASSES

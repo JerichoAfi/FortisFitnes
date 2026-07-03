@@ -104,7 +104,7 @@ const OurTrainer = () => {
 
         <div className="relative z-10 text-center px-6 max-w-4xl">
           <h1
-            className="text-[#e11d2e] text-5xl md:text-7xl lg:text-8xl tracking-[0.03em] leading-[1.02] mb-7"
+            className="text-white text-5xl md:text-7xl lg:text-8xl tracking-[0.03em] leading-[1.02] mb-7"
             style={{ fontFamily: "'Oswald', sans-serif", fontWeight: 700 }}
           >
             OUR TEAM

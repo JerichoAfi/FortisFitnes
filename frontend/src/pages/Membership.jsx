@@ -43,7 +43,7 @@ const KEPANJEN_FACILITIES = [
   {
     label: 'FASILITAS PENDUKUNG',
     desc: 'Locker, shower room, hot shower, dan musholla.',
-    image: 'https://customer-assets.emergentagent.com/job_content-124/artifacts/0qemut2r_IMG-20250514-WA0016.jpg',
+    image: 'https://customer-assets.emergentagent.com/job_content-124/artifacts/6jcl0p8v_Toilet.png',
   },
   {
     label: 'KENYAMANAN MEMBER',
@@ -61,22 +61,22 @@ const GRAHA_FACILITIES = [
   {
     label: 'PRIVATE GYM EXPERIENCE',
     desc: 'Private, comfortable, and by reservation only.',
-    image: 'https://customer-assets.emergentagent.com/job_content-124/artifacts/fnt8jbcr_DSCF0204.jpg',
+    image: 'https://customer-assets.emergentagent.com/job_content-124/artifacts/xqwhkuvi_PRIVATE%20GYM%20EXPERIENCE.jpg',
   },
   {
     label: 'IMPORTED GYM EQUIPMENT',
     desc: 'Premium equipment for strength, cardio, and functional training.',
-    image: 'https://customer-assets.emergentagent.com/job_content-124/artifacts/vg6snfcw_DSCF0676.JPG',
+    image: 'https://customer-assets.emergentagent.com/job_content-124/artifacts/ywg5ydrx_IMPORTED%20GYM%20EQUIPMENT-2.jpg',
   },
   {
     label: 'PREMIUM AMENITIES',
     desc: 'Hot shower and body composition scale.',
-    image: 'https://customer-assets.emergentagent.com/job_content-124/artifacts/txnu2i6s_DSC07365.jpg',
+    image: 'https://customer-assets.emergentagent.com/job_content-124/artifacts/gbdoekn3_PREMIUM%20AMENITIES.jpg',
   },
   {
     label: 'MEMBER COMFORT',
     desc: 'Free water refill and free Wi-Fi.',
-    image: 'https://customer-assets.emergentagent.com/job_content-124/artifacts/m96do02j_IMG-20250514-WA0014.jpg',
+    image: 'https://customer-assets.emergentagent.com/job_content-124/artifacts/djz0bhoa_MEMBER%20COMFORT.jpg',
   },
   {
     label: 'FREE PARKING',
@@ -188,7 +188,7 @@ const Membership = () => {
 
         <div className="relative z-10 text-center px-6 max-w-4xl">
           <h1
-            className="text-[#e11d2e] text-5xl md:text-7xl lg:text-8xl tracking-[0.03em] leading-[1.02] mb-8"
+            className="text-white text-5xl md:text-7xl lg:text-8xl tracking-[0.03em] leading-[1.02] mb-8"
             style={{ fontFamily: "'Oswald', sans-serif", fontWeight: 700 }}
           >
             MORE THAN

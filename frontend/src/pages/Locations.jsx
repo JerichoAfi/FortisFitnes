@@ -57,7 +57,7 @@ const Locations = () => {
 
         <div className="relative z-10 text-center px-6 max-w-4xl">
           <h1
-            className="text-[#e11d2e] text-6xl md:text-8xl lg:text-9xl tracking-[0.02em] leading-[0.95]"
+            className="text-white text-6xl md:text-8xl lg:text-9xl tracking-[0.02em] leading-[0.95]"
             style={{ fontFamily: "'Oswald', sans-serif", fontWeight: 700 }}
           >
             LOCATIONS
