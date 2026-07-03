@@ -86,7 +86,7 @@ const GRAHA_FACILITIES = [
   {
     label: 'CLEAN & HYGIENIC ENVIRONMENT',
     desc: 'Cleaning wipes and disinfectant available in every session.',
-    image: 'https://customer-assets.emergentagent.com/job_content-124/artifacts/gws2igk7_CLEAN%20%26%20HYGIENIC%20ENVIRONMENT-2.jpg',
+    image: 'https://customer-assets.emergentagent.com/job_content-124/artifacts/o05z7mys_CLEAN%20%26%20HYGIENIC%20ENVIRONMENT-2.jpg',
   },
 ];
 
