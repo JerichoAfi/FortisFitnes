@@ -81,12 +81,12 @@ const GRAHA_FACILITIES = [
   {
     label: 'FREE PARKING',
     desc: 'Convenient and easy-access parking area.',
-    image: 'https://i.postimg.cc/9QVr6M1r/DSC07318.jpg',
+    image: 'https://customer-assets.emergentagent.com/job_content-124/artifacts/078qwa6y_FREE%20PARKING-2.jpg',
   },
   {
     label: 'CLEAN & HYGIENIC ENVIRONMENT',
     desc: 'Cleaning wipes and disinfectant available in every session.',
-    image: 'https://customer-assets.emergentagent.com/job_content-124/artifacts/n7zs0zr7_DSC07350.jpg',
+    image: 'https://customer-assets.emergentagent.com/job_content-124/artifacts/gws2igk7_CLEAN%20%26%20HYGIENIC%20ENVIRONMENT-2.jpg',
   },
 ];
 
